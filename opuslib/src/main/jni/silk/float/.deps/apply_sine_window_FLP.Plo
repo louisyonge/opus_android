@@ -1,0 +1,181 @@
+silk/float/apply_sine_window_FLP.lo: silk/float/apply_sine_window_FLP.c \
+ config.h silk/float/main_FLP.h silk/float/SigProc_FLP.h \
+ silk/SigProc_FIX.h /usr/include/string.h /usr/include/_ansi.h \
+ /usr/include/newlib.h /usr/include/sys/config.h \
+ /usr/include/machine/ieeefp.h /usr/include/sys/features.h \
+ /usr/include/cygwin/config.h /usr/include/sys/reent.h \
+ /usr/include/_ansi.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/stddef.h \
+ /usr/include/sys/_types.h /usr/include/machine/_types.h \
+ /usr/include/machine/_default_types.h /usr/include/sys/lock.h \
+ /usr/include/sys/cdefs.h /usr/include/sys/string.h silk/typedef.h \
+ include/opus_types.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/sys/_intsup.h \
+ /usr/include/sys/_stdint.h include/opus_defines.h include/opus_types.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/float.h \
+ silk/resampler_structs.h silk/macros.h celt/ecintrin.h \
+ /usr/include/math.h /usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/syslimits.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include-fixed/limits.h \
+ /usr/include/limits.h /usr/include/features.h \
+ /usr/include/bits/wordsize.h celt/arch.h silk/Inlines.h \
+ silk/MacroCount.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/stdarg.h \
+ /usr/include/sys/types.h /usr/include/machine/types.h \
+ /usr/include/cygwin/types.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/byteswap.h \
+ /usr/include/sys/_timespec.h /usr/include/sys/sysmacros.h \
+ /usr/include/sys/stdio.h silk/MacroDebug.h celt/float_cast.h \
+ silk/float/structs_FLP.h silk/typedef.h silk/main.h silk/SigProc_FIX.h \
+ silk/define.h silk/errors.h silk/structs.h celt/entenc.h celt/entcode.h \
+ celt/ecintrin.h celt/entdec.h silk/tables.h silk/PLC.h silk/main.h \
+ silk/control.h silk/debug.h silk/structs.h silk/define.h silk/debug.h
+
+config.h:
+
+silk/float/main_FLP.h:
+
+silk/float/SigProc_FLP.h:
+
+silk/SigProc_FIX.h:
+
+/usr/include/string.h:
+
+/usr/include/_ansi.h:
+
+/usr/include/newlib.h:
+
+/usr/include/sys/config.h:
+
+/usr/include/machine/ieeefp.h:
+
+/usr/include/sys/features.h:
+
+/usr/include/cygwin/config.h:
+
+/usr/include/sys/reent.h:
+
+/usr/include/_ansi.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/stddef.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/machine/_default_types.h:
+
+/usr/include/sys/lock.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/sys/string.h:
+
+silk/typedef.h:
+
+include/opus_types.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/sys/_intsup.h:
+
+/usr/include/sys/_stdint.h:
+
+include/opus_defines.h:
+
+include/opus_types.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/float.h:
+
+silk/resampler_structs.h:
+
+silk/macros.h:
+
+celt/ecintrin.h:
+
+/usr/include/math.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/limits.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/syslimits.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include-fixed/limits.h:
+
+/usr/include/limits.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/wordsize.h:
+
+celt/arch.h:
+
+silk/Inlines.h:
+
+silk/MacroCount.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.2/include/stdarg.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/cygwin/types.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/byteswap.h:
+
+/usr/include/sys/_timespec.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/sys/stdio.h:
+
+silk/MacroDebug.h:
+
+celt/float_cast.h:
+
+silk/float/structs_FLP.h:
+
+silk/typedef.h:
+
+silk/main.h:
+
+silk/SigProc_FIX.h:
+
+silk/define.h:
+
+silk/errors.h:
+
+silk/structs.h:
+
+celt/entenc.h:
+
+celt/entcode.h:
+
+celt/ecintrin.h:
+
+celt/entdec.h:
+
+silk/tables.h:
+
+silk/PLC.h:
+
+silk/main.h:
+
+silk/control.h:
+
+silk/debug.h:
+
+silk/structs.h:
+
+silk/define.h:
+
+silk/debug.h:

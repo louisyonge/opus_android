@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc" tools:context=".oplayer">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="false" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
+        android:text="@string/dummy_content" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="@bool/abc_action_bar_embed_tabs"
+        android:background="#ff000000">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay" android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button android:id="@+id/dummy_button" style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/dummy_button" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:inputType="none"
+            android:ems="10"
+            android:id="@+id/mainLog"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="2dp"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encode"
+            android:id="@+id/btnEnc"
+            android:layout_gravity="center"
+            android:layout_marginRight="60dp"
+            android:onClick="btnEncClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decode"
+            android:id="@+id/btnDec"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:onClick="btnDecClick" />
+
+        <EditText
+            android:layout_width="272dp"
+            android:layout_height="133dp"
+            android:id="@+id/instruText"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            android:text="Note:\n Please put test.wav and test.opus files in the path of sdcard. Then press Encode/Decode button below."
+            android:textStyle="normal"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+    </FrameLayout>
+
+</FrameLayout>

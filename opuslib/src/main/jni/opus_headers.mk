@@ -1,0 +1,32 @@
+OPUS_HEAD = \
+include/config.h \
+include/log.h \
+ogg/ogg.h \
+ogg/os_types.h \
+opusfile/internal.h \
+opusfile/opusfile.h \
+opustool/opusaudio.h \
+opustool/arch.h \
+opustool/cpusupport.h \
+opustool/diag_range.h \
+opustool/flac.h \
+opustool/getopt.h \
+opustool/info_opus.h \
+opustool/lpc.h \
+opustool/opusenc.h \
+opustool/opusinfo.h \
+opustool/opus_header.h \
+opustool/os_support.h \
+opustool/picture.h \
+opustool/resample_sse.h \
+opustool/speex_resampler.h \
+opustool/stack_alloc.h \
+opustool/wave_out.h \
+opustool/wav_io.h \
+include/opus.h \
+include/opus_multistream.h \
+src/opus_private.h \
+src/analysis.h \
+src/mlp.h \
+src/tansig_table.h \
+opustool/top_oply_opuslib_OpusTool.h

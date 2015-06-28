@@ -1,0 +1,557 @@
+ACTIVITY MANAGER PENDING INTENTS (dumpsys activity intents)
+  * PendingIntentRecord{41686b78 android startActivity}
+  * PendingIntentRecord{4150abb0 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41deb5f8 cn.com.chinatelecom.account startService}
+  * PendingIntentRecord{41851930 com.android.systemui broadcastIntent}
+  * PendingIntentRecord{41832170 com.htc.htcpowermanager startActivity}
+  * PendingIntentRecord{41d02f98 android broadcastIntent}
+  * PendingIntentRecord{415beb20 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{419d5568 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41d1db90 com.android.phone broadcastIntent}
+  * PendingIntentRecord{4159f5a0 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{415e4a10 com.android.systemui broadcastIntent}
+  * PendingIntentRecord{419b0bc0 android startActivity}
+  * PendingIntentRecord{41425020 android broadcastIntent}
+  * PendingIntentRecord{4141efc0 android broadcastIntent}
+  * PendingIntentRecord{413bc758 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{416e35b8 android broadcastIntent}
+  * PendingIntentRecord{41645b78 cn.com.chinatelecom.account startService}
+  * PendingIntentRecord{41a125f0 com.htc.launcher broadcastIntent}
+  * PendingIntentRecord{41817240 cn.com.chinatelecom.account startService}
+  * PendingIntentRecord{412cc7c0 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{418fe5c0 android broadcastIntent}
+  * PendingIntentRecord{418f44d0 com.htc.htclocationservice startService}
+  * PendingIntentRecord{41a14a18 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41d28ea8 com.android.camera broadcastIntent}
+  * PendingIntentRecord{41ba9c90 com.htc.aurora startService}
+  * PendingIntentRecord{41d418a8 android broadcastIntent}
+  * PendingIntentRecord{418cd788 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{419b0318 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{4193a0c0 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41981b50 com.android.providers.calendar broadcastIntent}
+  * PendingIntentRecord{41867720 android broadcastIntent}
+  * PendingIntentRecord{41521278 android broadcastIntent}
+  * PendingIntentRecord{41414950 android broadcastIntent}
+  * PendingIntentRecord{41984e38 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41502218 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{416c9468 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41a31db8 android broadcastIntent}
+  * PendingIntentRecord{418c10f8 android broadcastIntent}
+  * PendingIntentRecord{418c7d00 android broadcastIntent}
+  * PendingIntentRecord{41641d08 android broadcastIntent}
+  * PendingIntentRecord{41804338 android broadcastIntent}
+  * PendingIntentRecord{41a45ba8 android broadcastIntent}
+  * PendingIntentRecord{4190f5a8 com.android.settings startActivity}
+  * PendingIntentRecord{41dcb618 com.android.htccontacts broadcastIntent}
+  * PendingIntentRecord{417377c8 com.android.systemui broadcastIntent}
+  * PendingIntentRecord{41a61ff8 android broadcastIntent}
+  * PendingIntentRecord{416b71e8 android broadcastIntent}
+  * PendingIntentRecord{41469288 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41d38938 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41a32918 com.htc.launcher broadcastIntent}
+  * PendingIntentRecord{41a5f280 android broadcastIntent}
+  * PendingIntentRecord{4142b1d0 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41a24c70 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41821498 android broadcastIntent}
+  * PendingIntentRecord{41825a50 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41cd8208 com.htc.usage startService}
+  * PendingIntentRecord{41747bd0 android broadcastIntent}
+  * PendingIntentRecord{4187a5e8 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41365268 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{415855d8 android startActivity}
+  * PendingIntentRecord{413c3120 android broadcastIntent}
+  * PendingIntentRecord{418d7408 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{41d00508 com.htcmarket startService}
+  * PendingIntentRecord{4140e460 android broadcastIntent}
+  * PendingIntentRecord{414c1000 com.htc.launcher broadcastIntent}
+  * PendingIntentRecord{4183be78 android broadcastIntent}
+  * PendingIntentRecord{414b50a8 com.ndoo.aurora startService}
+  * PendingIntentRecord{4194fd10 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{418b9028 android broadcastIntent}
+  * PendingIntentRecord{4140fe78 android broadcastIntent}
+  * PendingIntentRecord{413410a0 android broadcastIntent}
+  * PendingIntentRecord{417571e8 com.htc.sync.provider.weather broadcastIntent}
+  * PendingIntentRecord{41cf35a0 com.htc.task broadcastIntent}
+  * PendingIntentRecord{41643468 com.htc.htcpowermanager broadcastIntent}
+  * PendingIntentRecord{415bf668 com.htc.launcher.fakescreen broadcastIntent}
+  * PendingIntentRecord{415d7690 com.ctc.epush broadcastIntent}
+  * PendingIntentRecord{41586e20 com.htc.resetnotify startService}
+  * PendingIntentRecord{416c7948 com.htc.opensense.social startService}
+  * PendingIntentRecord{4156b968 android broadcastIntent}
+  * PendingIntentRecord{415921f0 com.htc.music broadcastIntent}
+ 
+ACTIVITY MANAGER BROADCAST STATE (dumpsys activity broadcasts)
+  Historical broadcasts [foreground]:
+  #0: BroadcastRecord{416c83c0 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #1: BroadcastRecord{41de5070 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #2: BroadcastRecord{41d48768 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #3: BroadcastRecord{41a69f80 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #4: BroadcastRecord{41b41fb8 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #5: BroadcastRecord{41d67850 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #6: BroadcastRecord{41ba2be8 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #7: BroadcastRecord{417147e8 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #8: BroadcastRecord{41f95958 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #9: BroadcastRecord{41b2ded0 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #10: BroadcastRecord{41419790 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #11: BroadcastRecord{41d2ab80 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #12: BroadcastRecord{41faa278 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #13: BroadcastRecord{41b1dc00 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #14: BroadcastRecord{41e0c6e8 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #15: BroadcastRecord{41a40148 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #16: BroadcastRecord{41fae830 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #17: BroadcastRecord{4196baf0 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #18: BroadcastRecord{41625980 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #19: BroadcastRecord{419720e8 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #20: BroadcastRecord{41b0efb8 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #21: BroadcastRecord{416c9de8 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #22: BroadcastRecord{41b5fcc0 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+  #23: BroadcastRecord{41d1a978 android.intent.action.SCREEN_OFF callingPid=537 callingUid=1000}
+  #24: BroadcastRecord{41357dd8 android.intent.action.SCREEN_ON callingPid=537 callingUid=1000}
+
+  Historical broadcasts [background]:
+  #0: BroadcastRecord{41dcc628 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #1: BroadcastRecord{41dd0ae0 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #2: BroadcastRecord{41deb6b0 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #3: BroadcastRecord{41e10450 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #4: BroadcastRecord{41e3a8c8 android.intent.action.TIME_TICK callingPid=-1 callingUid=1000}
+  #5: BroadcastRecord{41e43e78 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #6: BroadcastRecord{41fae790 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #7: BroadcastRecord{41a54730 com.htc.intent.action.NOTIFY_ENTER_HOME callingPid=537 callingUid=1000}
+  #8: BroadcastRecord{41b4b190 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #9: BroadcastRecord{41beaba8 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #10: BroadcastRecord{41cc74b0 com.htc.contacts.intent.ACTION_LAUNCH callingPid=10483 callingUid=10034}
+  #11: BroadcastRecord{41b32800 com.htc.launcher.action.SET_NOTIFICATION callingPid=981 callingUid=1001}
+  #12: BroadcastRecord{41dce318 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #13: BroadcastRecord{41b4ae80 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #14: BroadcastRecord{41ba8c68 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #15: BroadcastRecord{41a14358 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+  #16: BroadcastRecord{41b436d8 android.intent.action.TIME_TICK callingPid=-1 callingUid=1000}
+  #17: BroadcastRecord{4197fce0 android.intent.action.USER_PRESENT callingPid=537 callingUid=1000}
+  #18: BroadcastRecord{4197fc40 android.intent.action.USER_PRESENT callingPid=537 callingUid=1000}
+  #19: BroadcastRecord{419d9328 ALARM_FRAMEWORK_BROADCAST_ACTION_SCREEN_ON callingPid=537 callingUid=1000}
+  #20: BroadcastRecord{41b4a7a8 ALARM_FRAMEWORK_BROADCAST_ACTION_SCREEN_OFF callingPid=537 callingUid=1000}
+  #21: BroadcastRecord{418f6258 android.intent.action.CLOSE_SYSTEM_DIALOGS callingPid=-1 callingUid=1000}
+  #22: BroadcastRecord{41df3db0 android.intent.action.USER_PRESENT callingPid=537 callingUid=1000}
+  #23: BroadcastRecord{41d28f30 ALARM_FRAMEWORK_BROADCAST_ACTION_SCREEN_ON callingPid=537 callingUid=1000}
+  #24: BroadcastRecord{41de5a38 android.intent.action.SIG_STR callingPid=981 callingUid=1001}
+
+  Sticky broadcasts:
+  * Sticky action android.intent.action.HTC_EMERGENCY_MODE_CHANGED
+  * Sticky action android.media.SCO_AUDIO_STATE_CHANGED
+  * Sticky action com.htc.intent.action.SIM_CONTACTS_READY
+  * Sticky action android.hardware.usb.action.USB_STATE
+  * Sticky action com.htc.message.action.update_unread_message_count
+  * Sticky action com.htc.intent.action.BATTERY_CHANGE_NOTIFICATION
+  * Sticky action android.provider.Telephony.SPN_STRINGS_UPDATED
+  * Sticky action com.htc.intent.action.SIG_STR_EXT
+  * Sticky action android.intent.action.HAC_STATE_CHANGED
+  * Sticky action com.htc.phone.UPDATE_MISSCALL_COUNT
+  * Sticky action com.htc.intent.action.SIM_STATE_CHANGED_EXT
+  * Sticky action android.net.nsd.STATE_CHANGED
+  * Sticky action android.intent.action.HTC_SIMCARD_STATUS_UPDATE
+  * Sticky action com.android.systemui.statusbar.StatusBarService.STATUS_BAR_READY
+  * Sticky action android.intent.action.BATTERY_CHANGED
+  * Sticky action android.net.wifi.p2p.CONNECTION_STATE_CHANGE
+  * Sticky action android.intent.action.SIM_STATE_CHANGED
+  * Sticky action android.intent.action.SIG_STR
+  * Sticky action android.intent.action.SERVICE_STATE
+  * Sticky action com.htc.intent.action.SIM_CONTACTS_DB_READY
+  * Sticky action com.htc.task.action.idlescreen.update_count
+  * Sticky action android.intent.action.HDMI_PLUGGED
+  * Sticky action com.htc.intent.action.USB_CONNECT2PC
+  * Sticky action android.media.ACTION_SCO_AUDIO_STATE_UPDATED
+  * Sticky action android.net.thrott.THROTTLE_ACTION
+  * Sticky action android.media.MASTER_MUTE_CHANGED_ACTION
+  * Sticky action android.net.wifi.p2p.THIS_DEVICE_CHANGED
+  * Sticky action android.htc.intent.action.SIMDetectedNotify
+  * Sticky action android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE
+  * Sticky action com.htc.intent.action.BATTERY_CHANGE_PARTIAL
+  * Sticky action com.htc.intent.action.CONTACTS_DB_READY
+  * Sticky action android.net.conn.CONNECTIVITY_CHANGE
+  * Sticky action android.net.wifi.supplicant.STATE_CHANGE
+  * Sticky action android.intent.action.SERVICE_STATE_EXT
+  * Sticky action android.net.wifi.WIFI_STATE_CHANGED
+  * Sticky action android.net.thrott.POLL_ACTION
+  * Sticky action android.net.wifi.STATE_CHANGE
+  * Sticky action android.media.RINGER_MODE_CHANGED
+  * Sticky action android.os.UpdateLock.UPDATE_LOCK_CHANGED
+  * Sticky action android.intent.action.ANY_DATA_STATE
+  * Sticky action android.net.wifi.p2p.STATE_CHANGED
+ 
+ACTIVITY MANAGER CONTENT PROVIDERS (dumpsys activity providers)
+  Published content providers (by class):
+  * ContentProviderRecord{414c12f8 com.android.providers.telephony/.SubGsmApnProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=subgsmapn
+  * ContentProviderRecord{414b5d90 com.android.providers.telephony/.MmsSmsV2Provider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=mms-sms-v2
+  * ContentProviderRecord{41491f60 com.android.providers.telephony/.CBProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=cbchannels
+  * ContentProviderRecord{4167ddf0 com.android.providers.htcCheckin/.htcCheckinProvider}
+    proc=ProcessRecord{412ac910 537:system/1000}
+    authority=android.server.htcCheckin
+  * ContentProviderRecord{41498040 com.android.providers.telephony/.HtcCmasProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=htc-cmas
+  * ContentProviderRecord{4148d680 com.android.phone/.IccProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=icc
+    1 connections, 0 external handles
+      -> 970:android.process.acore/u0a34 s1/1 u0/0 +58d8h34m21s456ms
+  * ContentProviderRecord{415c5b88 com.android.providers.telephony/.CdmaApnProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=cdmaapn
+  * ContentProviderRecord{41521e88 com.android.providers.telephony/.AllMessagesProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=allmessages
+  * ContentProviderRecord{4147a068 com.android.providers.telephony/.MmsProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=mms
+  * ContentProviderRecord{414e1670 com.android.providers.telephony/.MmsSmsProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    launchingApp=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=mms-sms
+  * ContentProviderRecord{41598c30 com.android.providers.telephony/.SearchdbProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=search
+  * ContentProviderRecord{41d3d6c8 com.android.settings/.wifi.WISPrProvider}
+    proc=ProcessRecord{419c35a8 1472:com.android.settings/1000}
+    authority=wispr
+  * ContentProviderRecord{418d8710 com.htc.htcpowermanager/.smartsync.SmartSyncProvider}
+    proc=ProcessRecord{41d41e70 2356:com.htc.htcpowermanager:remote/1000}
+    authority=com.htc.htcpowermanager
+  * ContentProviderRecord{41d48c40 com.android.settings/.HtcCdmaSettingsProvider}
+    proc=ProcessRecord{419c35a8 1472:com.android.settings/1000}
+    authority=com.android.settings.provider.cdmasettings
+  * ContentProviderRecord{41682340 com.android.providers.settings/.SettingsProvider}
+    proc=ProcessRecord{412ac910 537:system/1000}
+    authority=settings
+    11 connections, 0 external handles
+      -> 808:com.android.systemui/1000 s1/1 u0/0 +58d8h35m0s495ms
+      -> 899:com.htc.launcher/u0a134 s0/0 u1/1 +58d8h34m59s441ms
+      -> 914:com.htc.android.htcime/u0a57 s1/1 u0/0 +58d8h34m58s825ms
+      -> 970:android.process.acore/u0a34 s1/1 u0/0 +58d8h34m57s830ms
+      -> 981:com.android.phone/1001 s1/1 u0/0 +58d8h34m56s546ms
+      -> 996:com.android.htcdialer/u0a34 s1/1 u0/0 +48d22h55m1s933ms
+      -> 16885:com.htc.bgp/u0a30 s1/1 u0/0 +1d0h26m0s853ms
+      -> 17027:com.htc.idlescreen.Nolockscreen/u0a109 s1/1 u0/0 +1d0h25m19s634ms
+      -> 3097:com.android.defcontainer/u0a35 s1/1 u0/0 +5h55m21s183ms
+      -> 598:com.android.nfc/1027 s1/1 u0/0 +3h14m39s603ms
+      -> 1472:com.android.settings/1000 s1/1 u0/0 +6m56s310ms
+  * ContentProviderRecord{414ce428 com.android.providers.telephony/.QTextProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=qtext
+  * ContentProviderRecord{414f1898 com.android.providers.telephony/.SmsProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=sms
+  * ContentProviderRecord{415164b8 com.android.providers.telephony/.GsmApnProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=gsmapn
+  * ContentProviderRecord{41560c40 com.android.providers.telephony/.TelephonyProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=telephony
+  * ContentProviderRecord{41486748 com.android.providers.telephony/.HtcMsgsProvider}
+    proc=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    authority=htcmsgs
+  * ContentProviderRecord{415513d0 com.android.providers.contacts/.VoicemailContentProvider}
+    proc=ProcessRecord{41493d68 970:android.process.acore/u0a34}
+    authority=com.android.voicemail
+  * ContentProviderRecord{419acad8 com.sina.mfweibo/.datasource.SinaWeiboDBProviderExternal}
+    proc=ProcessRecord{41a334d8 1141:com.sina.mfweibo/u0a161}
+    authority=com.sina.mfweibo.blogProviderExternal
+  * ContentProviderRecord{41d67938 com.htc.opensense/.syncprovider.SyncProvider}
+    proc=ProcessRecord{419beb78 1099:com.htc.opensense.social/u0a30}
+    authority=com.htc.settings.accountsync.SYNC
+  * ContentProviderRecord{41b0e088 com.htc.providers.settings/.HtcInternalSettingsProvider}
+    proc=ProcessRecord{419e15c8 2111:com.htc.providers.settings:remote/u0a78}
+    authority=com.htc.providers.settings.HtcInternalSettingsProvider
+  * ContentProviderRecord{417b5460 com.android.providers.media/.MediaProvider}
+    proc=ProcessRecord{417d9090 2875:android.process.media/u0a38}
+    authority=media
+  * ContentProviderRecord{4176a478 com.htc.friendstream.sinaweiboplugin/.db.SSNSProvider}
+    proc=ProcessRecord{4165cf78 2070:com.htc.friendstream.sinaweiboplugin/u0a30}
+    authority=com.htc.friendstream.sinaweiboplugin
+  * ContentProviderRecord{41662028 com.htc.opensense/.pluginmanager.PluginProvider}
+    proc=ProcessRecord{41837308 16885:com.htc.bgp/u0a30}
+    authority=com.htc.opensense.plugin
+  * ContentProviderRecord{416c01d8 com.htc.sync.provider.weather/.Provider}
+    proc=ProcessRecord{41837308 16885:com.htc.bgp/u0a30}
+    authority=com.htc.sync.provider.weather
+  * ContentProviderRecord{41d63288 com.htc.providers.uploads/.UploadProvider}
+    proc=ProcessRecord{419beb78 1099:com.htc.opensense.social/u0a30}
+    authority=com.htc.providers.uploads
+  * ContentProviderRecord{417bce60 com.android.providers.downloads/.DownloadProvider}
+    proc=ProcessRecord{417d9090 2875:android.process.media/u0a38}
+    authority=downloads
+  * ContentProviderRecord{41d11890 com.htc.pen/.provider.PenMenuProvider}
+    proc=ProcessRecord{41b10650 2141:com.htc.pen/u0a125}
+    authority=com.htc.penmenu
+  * ContentProviderRecord{41de26f0 com.htc.CustomizationSetup/.AccountsProvider}
+    proc=ProcessRecord{41837308 16885:com.htc.bgp/u0a30}
+    authority=com.htc.accounts
+  * ContentProviderRecord{41a47b20 com.htc.android.htcime/.provider.HTCIMEProvider}
+    proc=ProcessRecord{41433a40 914:com.htc.android.htcime/u0a57}
+    launchingApp=ProcessRecord{41433a40 914:com.htc.android.htcime/u0a57}
+    authority=htc_ime
+  * ContentProviderRecord{41493410 com.android.providers.userdictionary/.UserDictionaryProvider}
+    proc=ProcessRecord{41493d68 970:android.process.acore/u0a34}
+    launchingApp=ProcessRecord{41493d68 970:android.process.acore/u0a34}
+    authority=user_dictionary
+  * ContentProviderRecord{412fc740 com.htc.launcher/.masthead.MastheadStateProvider}
+    proc=ProcessRecord{414c8740 899:com.htc.launcher/u0a134}
+    authority=com.htc.launcher.masthead_state
+  * ContentProviderRecord{41fabb50 com.htc.provider.CustomizationSettings/.CustomizationSettingsProvider}
+    proc=ProcessRecord{41837308 16885:com.htc.bgp/u0a30}
+    authority=customization_settings
+  * ContentProviderRecord{41566dc0 com.htc.launcher/.appwidgetdata.AppWidgetDataProvider}
+    proc=ProcessRecord{414c8740 899:com.htc.launcher/u0a134}
+    authority=com.htc.launcher.AppWidgetDataProvider
+  * ContentProviderRecord{412fc5d8 com.htc.launcher/.facade.LauncherProviderFacade}
+    proc=ProcessRecord{414c8740 899:com.htc.launcher/u0a134}
+    authority=com.htc.launcher.settings.facade
+  * ContentProviderRecord{4142aae0 com.htc.launcher/.LauncherProvider}
+    proc=ProcessRecord{414c8740 899:com.htc.launcher/u0a134}
+    launchingApp=ProcessRecord{414c8740 899:com.htc.launcher/u0a134}
+    authority=com.htc.launcher.settings
+  * ContentProviderRecord{41d7cf28 com.htc.opensense.social/.provider.SocialProvider}
+    proc=ProcessRecord{419beb78 1099:com.htc.opensense.social/u0a30}
+    authority=com.htc.opensense.social
+  * ContentProviderRecord{41565130 com.android.providers.contacts/.HtcContactsProvider2}
+    proc=ProcessRecord{41493d68 970:android.process.acore/u0a34}
+    authority=contacts;com.android.contacts
+    1 connections, 0 external handles
+      -> 996:com.android.htcdialer/u0a34 s1/2 u0/2 +48s492ms
+  * ContentProviderRecord{419ab7c8 com.sina.mfweibo/.datasource.SinaWeiboDBProvider}
+    proc=ProcessRecord{41a334d8 1141:com.sina.mfweibo/u0a161}
+    authority=com.sina.mfweibo.blogProvider
+  * ContentProviderRecord{41746400 com.android.providers.calendar/.HtcCalendarProvider}
+    proc=ProcessRecord{41837308 16885:com.htc.bgp/u0a30}
+    authority=com.android.calendar
+  * ContentProviderRecord{41a62f28 com.htc.android.htcime/.provider.HTCPPIMEProvider}
+    proc=ProcessRecord{41433a40 914:com.htc.android.htcime/u0a57}
+    authority=htc_ppime
+  * ContentProviderRecord{41b0e190 com.htc.providers.settings/.HtcCupdProvider}
+    proc=ProcessRecord{419e15c8 2111:com.htc.providers.settings:remote/u0a78}
+    authority=com.htc.htccupd_settings
+  * ContentProviderRecord{41d47a18 com.htc.opensense/.cachemanager.CacheProvider}
+    proc=ProcessRecord{419beb78 1099:com.htc.opensense.social/u0a30}
+    authority=com.htc.cachemanager
+  * ContentProviderRecord{41b5d228 com.android.htccontacts/.peopleyouknow.PeopleYouKnowSettingsProvider}
+    proc=ProcessRecord{41d2b498 2559:com.android.htccontacts/u0a34}
+    authority=com.android.htccontacts.peopleyouknow
+  * ContentProviderRecord{41d115d0 com.htc.pen/.provider.PenProvider}
+    proc=ProcessRecord{41b10650 2141:com.htc.pen/u0a125}
+    authority=com.htc.pen
+  * ContentProviderRecord{4155d598 com.htc.provider.settings/.NotificationFlashLightProvider}
+    proc=ProcessRecord{41493d68 970:android.process.acore/u0a34}
+    authority=com.htc.provider.settings
+  * ContentProviderRecord{41ccb748 com.htc.task/.TaskSpecificProvider}
+    proc=ProcessRecord{41cdc298 2156:com.htc.task/u0a126}
+    authority=com.htc.task.dm.specific
+  * ContentProviderRecord{41cc6b18 com.htc.task/.APICProviderDecorator}
+    proc=ProcessRecord{41cdc298 2156:com.htc.task/u0a126}
+    authority=com.htc.task.dm
+  * ContentProviderRecord{41b775a0 com.richhouse.nfccenter/com.ag.rhg.db.MyContentProvider}
+    proc=ProcessRecord{417fbb50 1034:com.richhouse.nfccenter/u0a128}
+    authority=com.ag.rhg.provider
+  * ContentProviderRecord{41661f28 com.htc.provider.weather/.WeatherProvider}
+    proc=ProcessRecord{41837308 16885:com.htc.bgp/u0a30}
+    authority=com.htc.provider.weather
+  * ContentProviderRecord{41b0e3a0 com.htc.providers.settings/.HtcPreferredAppProvider}
+    proc=ProcessRecord{419e15c8 2111:com.htc.providers.settings:remote/u0a78}
+    authority=com.htc.providers.settings.HtcPreferredAppProvider
+  * ContentProviderRecord{41d0f348 com.htc.pen/.provider.PenMenu15Provider}
+    proc=ProcessRecord{41b10650 2141:com.htc.pen/u0a125}
+    authority=com.htc.penmenu15
+  * ContentProviderRecord{41d2af58 com.htc.plugin.news/.provider.NewsProvider}
+    proc=ProcessRecord{419beb78 1099:com.htc.opensense.social/u0a30}
+    authority=com.htc.plugin.news
+  * ContentProviderRecord{41566ea8 com.htc.launcher/.feeds.HighlightSelectCacheHelper}
+    proc=ProcessRecord{414c8740 899:com.htc.launcher/u0a134}
+    authority=com.htc.launcher.highligh_selection
+  * ContentProviderRecord{41b1b100 com.htc.providers.settings/.HtcPowerManagerProvider}
+    proc=ProcessRecord{419e15c8 2111:com.htc.providers.settings:remote/u0a78}
+    authority=com.htc.providers.settings.HtcPowerManagerProvider
+  * ContentProviderRecord{4155b520 com.android.providers.contacts/.CallLogProvider}
+    proc=ProcessRecord{41493d68 970:android.process.acore/u0a34}
+    authority=call_log
+ 
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  Active services:
+  * ServiceRecord{41c8a408 com.android.phone/.NetworkQueryService}
+    app=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    created=-58d8h34m53s857ms started=true connections=1
+    Connections:
+       -> 981:com.android.phone/1001
+  * ServiceRecord{41db0220 com.android.providers.media/.MtpService}
+    app=ProcessRecord{417d9090 2875:android.process.media/u0a38}
+    created=-6h0m11s243ms started=true connections=1
+    Connections:
+       -> 2875:android.process.media/u0a38
+  * ServiceRecord{41689090 android.htc.china.location.service/.GeocodeService}
+    app=ProcessRecord{415fd1f0 1063:android.htc.china.location.service/u0a8}
+    created=-58d8h34m58s136ms started=false connections=1
+    Connections:
+      act=com.android.location.service.GeocodeProvider pkg=android.htc.china.location.service -> 537:system/1000
+  * ServiceRecord{41d32ea0 com.htc.android.htcime/.HTCIMEService}
+    app=ProcessRecord{41433a40 914:com.htc.android.htcime/u0a57}
+    created=-58d8h34m58s676ms started=false connections=1
+    Connections:
+      act=android.view.InputMethod -> 537:system/1000
+  * ServiceRecord{41651410 android.htc.china.location.service/.NetworkLocationServiceCompat}
+    app=ProcessRecord{415fd1f0 1063:android.htc.china.location.service/u0a8}
+    created=-58d8h34m58s266ms started=false connections=1
+    Connections:
+      act=com.android.location.service.NetworkLocationProvider pkg=android.htc.china.location.service -> 537:system/1000
+  * ServiceRecord{4191d978 com.htc.smartdim/.sensor_eye}
+    app=ProcessRecord{412ac910 537:system/1000}
+    created=-1m42s522ms started=true connections=0
+  * ServiceRecord{41d40848 com.android.providers.htcCheckin/.htcCheckinService}
+    app=ProcessRecord{412ac910 537:system/1000}
+    created=-58d8h35m5s571ms started=true connections=0
+  * ServiceRecord{41d42340 com.android.systemui/.SystemUIService}
+    app=ProcessRecord{41b60df0 808:com.android.systemui/1000}
+    created=-58d8h35m0s857ms started=true connections=0
+  * ServiceRecord{41be9540 com.android.stk/.SubStkAppService}
+    app=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    created=-58d8h34m33s885ms started=true connections=0
+  * ServiceRecord{41502c40 com.android.htcdialer/.DialerService}
+    app=ProcessRecord{41ce0e30 10483:com.android.htcdialer/u0a34}
+    created=-58d8h34m57s156ms started=true connections=5
+    Connections:
+      act=com.htc.dialer.DIALER_SERVICE -> 996:com.android.htcdialer/u0a34
+      act=com.htc.dialer.DIALER_SERVICE -> 981:com.android.phone/1001
+      act=com.htc.dialer.DIALER_SERVICE -> 970:android.process.acore/u0a34
+      act=com.htc.dialer.DIALER_SERVICE -> 981:com.android.phone/1001
+      act=com.htc.dialer.DIALER_SERVICE -> 2559:com.android.htccontacts/u0a34
+  * ServiceRecord{41d72d48 com.htc.idlescreen.Nolockscreen/com.htc.Idlescreen.Nolockscreen.NolockscreenService}
+    app=ProcessRecord{4149e4a8 17027:com.htc.idlescreen.Nolockscreen/u0a109}
+    created=-1d0h25m20s46ms started=false connections=1
+    Connections:
+      act=com.htc.lockscreen.idlescreen.IdleScreenService -> 537:system/1000
+  * ServiceRecord{41a2d330 android.htc.china.location.service/com.htc.android.location.internal.server.NetworkLocationService}
+    app=ProcessRecord{415fd1f0 1063:android.htc.china.location.service/u0a8}
+    created=-58d8h34m57s721ms started=false connections=1
+    Connections:
+      act=com.htc.android.location.internal.ANDROID_NLP -> 1063:android.htc.china.location.service/u0a8
+  * ServiceRecord{416b2558 com.android.stk/.StkAppService}
+    app=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    created=-58d8h34m33s889ms started=true connections=0
+  * ServiceRecord{419f1898 com.ctc.epush/com.ctc.System.SMSService}
+    app=ProcessRecord{41d59a80 1012:android.process.acore/u0a40}
+    created=-58d8h34m58s52ms started=true connections=0
+  * ServiceRecord{418e5d10 com.android.phone/.BluetoothHeadsetService}
+    app=ProcessRecord{416a63f8 981:com.android.phone/1001}
+    created=-58d8h34m57s967ms started=true connections=2
+    Connections:
+      act=android.bluetooth.IBluetoothHeadset -> 598:com.android.nfc/1027
+      act=android.bluetooth.IBluetoothHeadset -> 537:system/1000
+  * ServiceRecord{41e0fc98 com.android.systemui/.ImageWallpaper}
+    app=ProcessRecord{41b60df0 808:com.android.systemui/1000}
+    created=-58d8h34m59s745ms started=false connections=1
+    Connections:
+      act=android.service.wallpaper.WallpaperService -> 537:system/1000
+  * ServiceRecord{41cd11a0 com.ctc.epush/com.ctc.System.RegisterService}
+    app=ProcessRecord{41d59a80 1012:android.process.acore/u0a40}
+    created=-58d8h34m1s878ms started=true connections=0
+ 
+ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+  Main stack:
+    TaskRecord{41985390 #4 A com.htc.launcher U 0}
+    Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10600000 cmp=com.htc.launcher/.Launcher }
+      Hist #5: ActivityRecord{41d7f9b0 com.htc.launcher/.Launcher}
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.htc.launcher/.Launcher }
+        ProcessRecord{414c8740 899:com.htc.launcher/u0a134}
+    TaskRecord{419d02b8 #71 A android.task.mms U 0}
+    Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.mms/.ui.ConversationList }
+      Hist #4: ActivityRecord{41bb7960 com.android.mms/.ui.ConversationList}
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.mms/.ui.ConversationList }
+    TaskRecord{4199b000 #50 A com.htc.android.mail U 0}
+    Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.htc.android.mail/.MultipleActivitiesMain }
+      Hist #3: ActivityRecord{419d2ca0 com.htc.android.mail/.ProviderListScreen}
+        Intent { act=android.intent.action.VIEW flg=0x4000000 cmp=com.htc.android.mail/.ProviderListScreen }
+    TaskRecord{41d44d80 #28 I com.android.settings/.Settings$TetherSettingsActivity U 0}
+    Intent { flg=0x14000000 Htcflg=0x1 cmp=com.android.settings/.Settings$TetherSettingsActivity }
+      Hist #2: ActivityRecord{414832e8 com.android.settings/.SubSettings}
+        Intent { act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings (has extras) }
+    TaskRecord{41b5ec38 #27 I com.android.settings/.Settings$DevelopmentSettingsActivity U 0}
+    Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 Htcflg=0x1 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity }
+      Hist #1: ActivityRecord{41b21fe8 com.android.settings/.DevelopmentSettings}
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 Htcflg=0x1 cmp=com.android.settings/.DevelopmentSettings bnds=[0,420][540,515] }
+    TaskRecord{41d4b528 #238 A android.task.HtcContacts U 0}
+    Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.htccontacts/.BrowseLayerCarouselActivity }
+      Hist #0: ActivityRecord{41d22ae0 com.android.htccontacts/.DialerTabActivity}
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.htccontacts/.DialerTabActivity bnds=[25,840][123,990] }
+        ProcessRecord{41ce0e30 10483:com.android.htcdialer/u0a34}
+ 
+  Running activities (most recent first):
+    TaskRecord{41985390 #4 A com.htc.launcher U 0}
+      Run #1: ActivityRecord{41d7f9b0 com.htc.launcher/.Launcher}
+    TaskRecord{41d4b528 #238 A android.task.HtcContacts U 0}
+      Run #0: ActivityRecord{41d22ae0 com.android.htccontacts/.DialerTabActivity}
+ 
+  mResumedActivity: ActivityRecord{41d7f9b0 com.htc.launcher/.Launcher}
+  mFocusedActivity: ActivityRecord{41d7f9b0 com.htc.launcher/.Launcher}
+
+  Recent tasks:
+  * Recent #0: TaskRecord{41985390 #4 A com.htc.launcher U 0}
+  * Recent #1: TaskRecord{41d4b528 #238 A android.task.HtcContacts U 0}
+  * Recent #2: TaskRecord{41a26d18 #237 A top.oply.opusplayer U 0}
+  * Recent #3: TaskRecord{41b2f0c8 #221 A com.htc.Weather U 0}
+  * Recent #4: TaskRecord{419673e0 #183 A com.htc.htccnfilemanager U 0}
+  * Recent #5: TaskRecord{41cc1290 #174 A com.android.systemui U 0}
+  * Recent #6: TaskRecord{41a4cf50 #171 A com.htc.opensense.social U 0}
+  * Recent #7: TaskRecord{413077a8 #72 A com.android.settings U 0}
+  * Recent #8: TaskRecord{41da4e70 #173 A com.htc.home.personalize U 0}
+  * Recent #9: TaskRecord{41d21440 #161 A android.task.camera U 0}
+  * Recent #10: TaskRecord{419d02b8 #71 A android.task.mms U 0}
+  * Recent #11: TaskRecord{41bbde90 #66 A com.example.nativecodec U 0}
+  * Recent #12: TaskRecord{417f9f38 #61 A com.example.hellojni U 0}
+  * Recent #13: TaskRecord{41970900 #59 A com.example.twolibs U 0}
+  * Recent #14: TaskRecord{4153b468 #52 A com.ly.young.opusplayer U 0}
+  * Recent #15: TaskRecord{41b19470 #49 A ly.opustools U 0}
+  * Recent #16: TaskRecord{4199b000 #50 A com.htc.android.mail U 0}
+  * Recent #17: TaskRecord{41578f80 #45 I com.android.settings/.ChooseLockGeneric U 0}
+  * Recent #18: TaskRecord{41dd9688 #29 A com.ly.young.opusandroid U 0}
+  * Recent #19: TaskRecord{41d44d80 #28 I com.android.settings/.Settings$TetherSettingsActivity U 0}
+ 
+ACTIVITY MANAGER RUNNING PROCESSES (dumpsys activity processes)
+  Process LRU list (sorted by oom_adj):
+    PERS # 7: adj=sys  /F  trm= 0 537:system/1000 (fixed)
+    PERS #25: adj=pers /B  trm= 0 1012:android.process.acore/u0a40 (started-bg-services)
+    PERS #23: adj=pers /F  trm= 0 598:com.android.nfc/1027 (fixed)
+    PERS # 5: adj=pers /F  trm= 0 808:com.android.systemui/1000 (fixed)
+    PERS # 3: adj=pers /F  trm= 0 981:com.android.phone/1001 (fixed)
+    PERS # 2: adj=pers /B  trm= 0 996:com.android.htcdialer/u0a34 (service)
+        com.android.htcdialer/.DialerService<=Proc{981:com.android.phone/1001}
+    Proc # 8: adj=fore /FA trm= 0 899:com.htc.launcher/u0a134 (top-activity)
+    Proc # 1: adj=vis  /B  trm= 0 970:android.process.acore/u0a34 (provider)
+        com.android.providers.contacts/.HtcContactsProvider2<=Proc{996:com.android.htcdialer/u0a34}
+    Proc # 0: adj=vis  /F  trm= 0 17027:com.htc.idlescreen.Nolockscreen/u0a109 (service)
+        com.htc.idlescreen.Nolockscreen/com.htc.Idlescreen.Nolockscreen.NolockscreenService<=Proc{537:system/1000}
+    Proc #24: adj=prcp /FS trm= 0 2875:android.process.media/u0a38 (foreground-service)
+    Proc # 6: adj=prcp /F  trm= 0 914:com.htc.android.htcime/u0a57 (service)
+        com.htc.android.htcime/.HTCIMEService<=Proc{537:system/1000}
+    Proc # 9: adj=bak+1/B  trm= 0 2559:com.android.htccontacts/u0a34 (bg-empty)
+    Proc # 4: adj=bak+1/B  trm= 0 1063:android.htc.china.location.service/u0a8 (bound-bg-services)
+        android.htc.china.location.service/.GeocodeService<=Proc{537:system/1000}
+    Proc #11: adj=bak+2/B  trm= 0 2388:com.eg.android.AlipayGphone/u0a10 (bg-empty)
+    Proc #10: adj=bak+2/B  trm= 0 16885:com.htc.bgp/u0a30 (bg-empty)
+    Proc #13: adj=bak+3/B  trm= 0 2156:com.htc.task/u0a126 (bg-empty)
+    Proc #12: adj=bak+3/B  trm= 0 2356:com.htc.htcpowermanager:remote/1000 (bg-empty)
+    Proc #15: adj=bak+4/B  trm= 0 2070:com.htc.friendstream.sinaweiboplugin/u0a30 (bg-empty)
+    Proc #14: adj=bak+4/B  trm= 0 2141:com.htc.pen/u0a125 (bg-empty)
+    Proc #17: adj=bak+5/B  trm= 0 3097:com.android.defcontainer/u0a35 (bg-empty)
+    Proc #16: adj=bak+5/B  trm= 0 1492:com.htc.cn.virtual/u0a156 (bg-empty)
+    Proc #22: adj=bak+6/B  trm= 0 1472:com.android.settings/1000 (bg-empty)
+    Proc #21: adj=bak+6/B  trm= 0 1141:com.sina.mfweibo/u0a161 (bg-empty)
+    Proc #20: adj=bak+6/B  trm= 0 1034:com.richhouse.nfccenter/u0a128 (bg-empty)
+    Proc #19: adj=bak+6/B  trm= 0 2111:com.htc.providers.settings:remote/u0a78 (bg-empty)
+    Proc #18: adj=bak+6/B  trm= 0 1099:com.htc.opensense.social/u0a30 (bg-empty)
+
+  mHomeProcess: ProcessRecord{414c8740 899:com.htc.launcher/u0a134}
+  mPreviousProcess: ProcessRecord{41ce0e30 10483:com.android.htcdialer/u0a34}
+  mConfiguration: {1.0 204mcc4mnc zh_CN sw360dp w360dp h614dp nrml long port finger -keyb/v/h -nav/h s.23 skin=default fontsize=3 hasNavBar=0}
+  mDebugApp=null/orig=null mDebugTransient=true mOrigWaitForDebugger=false
