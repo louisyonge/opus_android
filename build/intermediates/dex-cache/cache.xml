@@ -2,6 +2,20 @@
 <items version="2" >
 
     <item
+        jar="C:\opus\OpusPlayer\app\build\intermediates\exploded-aar\OpusPlayer\opuslib\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="962f2585623d5fe8807abb49ac5cab26a9aed16f">
+        <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\classes-62401ea8312f57f9a90a13a8b2298004eabdcbc1.jar" />
+    </item>
+    <item
+        jar="D:\android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-0fe028d791c9a45999429bcba79018542da991b4.jar" />
+    </item>
+    <item
         jar="C:\opus\OpusPlayer\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -21,20 +35,6 @@
         revision="22.0.1"
         sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
         <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\classes-99c32e745d83ec08a889ca3483cb4ba53f4e0ec2.jar" />
-    </item>
-    <item
-        jar="D:\android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-0fe028d791c9a45999429bcba79018542da991b4.jar" />
-    </item>
-    <item
-        jar="C:\opus\OpusPlayer\app\build\intermediates\exploded-aar\OpusPlayer\opuslib\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d9881c7f2b023e12ed1b9b04408dba769ffe2dd2">
-        <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\classes-62401ea8312f57f9a90a13a8b2298004eabdcbc1.jar" />
     </item>
 
 </items>

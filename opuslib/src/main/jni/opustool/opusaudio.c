@@ -282,6 +282,8 @@ void cleanupRecorder() {
     memset(&header, 0, sizeof(OpusHeader));
     memset(&op, 0, sizeof(ogg_packet));
     memset(&og, 0, sizeof(ogg_page));
+
+    LOGD("Recording ends!!!");
 }
 
 int initRecorder(const char *path) {
@@ -426,8 +428,10 @@ int initRecorder(const char *path) {
 int writeFrame(uint8_t *framePcmBytes, unsigned int frameByteCount) {
     int cur_frame_size = frame_size;
     _packetId++;
+    LOGD("100 th char is %c",framePcmBytes[100]);
+    LOGD("opus: Write frame, bytecont is %d", frameByteCount);
 
-    opus_int32 nb_samples = frameByteCount / 2;
+    opus_int32 nb_samples = frameByteCount ;
     total_samples += nb_samples;
     if (nb_samples < frame_size) {
         op.e_o_s = 1;
@@ -458,6 +462,7 @@ int writeFrame(uint8_t *framePcmBytes, unsigned int frameByteCount) {
             LOGE("Encoding failed: %s. Aborting.", opus_strerror(nbBytes));
             return 0;
         }
+        LOGD("bytes that encoded is: %d",nbBytes);
 
         enc_granulepos += cur_frame_size * 48000 / coding_rate;
         size_segments = (nbBytes + 255) / 255;
@@ -476,8 +481,10 @@ int writeFrame(uint8_t *framePcmBytes, unsigned int frameByteCount) {
             return 0;
         }
         bytes_written += writtenPageBytes;
+
         pages_out++;
     }
+    LOGD("byte_written is %lld", bytes_written);
 
     op.packet = (unsigned char *)_packet;
     op.bytes = nbBytes;
@@ -504,6 +511,7 @@ int writeFrame(uint8_t *framePcmBytes, unsigned int frameByteCount) {
         pages_out++;
     }
 
+    LOGD("last byte_written is %lld", bytes_written);
     return 1;
 }
 //
