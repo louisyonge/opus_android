@@ -431,7 +431,7 @@ int writeFrame(uint8_t *framePcmBytes, unsigned int frameByteCount) {
     LOGD("100 th char is %c",framePcmBytes[100]);
     LOGD("opus: Write frame, bytecont is %d", frameByteCount);
 
-    opus_int32 nb_samples = frameByteCount ;
+    opus_int32 nb_samples = frameByteCount / 2;
     total_samples += nb_samples;
     if (nb_samples < frame_size) {
         op.e_o_s = 1;
