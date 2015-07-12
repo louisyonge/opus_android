@@ -26,13 +26,13 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="254dp"
+            android:layout_height="69dp"
             android:inputType="none"
             android:ems="10"
             android:id="@+id/mainLog"
             android:layout_gravity="center_horizontal|bottom"
             android:layout_marginLeft="2dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="0dp"
             android:layout_marginRight="2dp"
             android:editable="false"
             android:focusable="false"
@@ -109,6 +109,18 @@
             android:layout_marginTop="60dp"
             android:minWidth="120dp"
             android:onClick="btnStopPClick" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="340dp"
+            android:id="@+id/lvFile"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="40dp"
+            tools:listitem="@android:layout/simple_list_item_checked"
+            android:choiceMode="singleChoice"
+            android:clickable="true"
+            android:drawSelectorOnTop="false" />
 
     </FrameLayout>
 

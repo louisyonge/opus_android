@@ -5,10 +5,14 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import top.oply.opuslib.OpusPlayer;
 import top.oply.opuslib.OpusRecorder;
@@ -17,15 +21,51 @@ import top.oply.opuslib.OpusTool;
 
 public class oplayer extends Activity {
 
-    OpusPlayer opusPlayer = null;
-    OpusRecorder opusRecorder = null;
+    private OpusPlayer opusPlayer = null;
+    private OpusRecorder opusRecorder = null;
+    private OpusTool oTool = new OpusTool();
+
+    private ListView lvFiles;
+    private List<String> lstFiles = new ArrayList<String>();
+    private ArrayAdapter<String> adapter;
+    private String path;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_oplayer);
+
+        //initial listView
+        lvFiles = (ListView)findViewById(R.id.lvFile);
+        initData();
+        adapter = new ArrayAdapter<String>( this , android.R.layout.simple_list_item_single_choice,lstFiles);
+        lvFiles.setAdapter(adapter);
      }
+    private List<String> initData(){
+        lstFiles = new ArrayList<String>();
+        String SDPATH = Environment.getExternalStorageDirectory().getPath();
+        path = SDPATH + "/OpusPlayer/";
+        File fp = new File(path);
+        if(!fp.exists())
+            fp.mkdir();
+
+        File[] files = fp.listFiles();
+        for (File f : files) {
+            lstFiles.add(f.getName());
+        }
+        return lstFiles;
+    }
+
+    private void updateList(String str){
+        if (lstFiles.contains(str))
+            return;
+        else {
+            lstFiles.add(str);
+            adapter.notifyDataSetChanged();
+        }
+
+    }
 
     private void print(String str) {
         TextView tv;
@@ -35,21 +75,21 @@ public class oplayer extends Activity {
 
     public void btnDecClick(View view){
 
-        String SDPATH = Environment.getExternalStorageDirectory().getPath() + "/";
-        String fileName = SDPATH + "test.opus";
+        String selectName = adapter.getItem(lvFiles.getSelectedItemPosition());
+        String fileName = path + selectName;
+
         File f = new File(fileName);
         if (!f.exists()){
 
             print(fileName + " is not exist, please put it there");
         }
         String fileNameOut = fileName + ".wav";
-
         print("Start decoding...");
-        OpusTool oTool = new OpusTool();
         Log.d("encode:", oTool.nativeGetString());
         int result = oTool.decode(fileName,fileNameOut, null);
         if (result == 0){
             String str = "Decode is complete. Output file is: " + fileNameOut;
+            updateList(selectName + ".wav");
             print(str);
         } else{
             String str = "Decode failed.";
@@ -58,22 +98,20 @@ public class oplayer extends Activity {
     }
 
     public void btnEncClick(View view){
-
-        String SDPATH = Environment.getExternalStorageDirectory().getPath() + "/";
-        String fileName = SDPATH + "test.wav";
+        String selectName = adapter.getItem(lvFiles.getSelectedItemPosition());
+        String fileName = path + selectName;
         File f = new File(fileName);
         if (!f.exists()){
             String str = fileName + " is not exist, please put it there.";
             print(str);
         }
         String fileNameOut = fileName + ".opus";
-
         print("Start encoding...");
-        OpusTool oTool = new OpusTool();
         Log.d("encode:", oTool.nativeGetString());
         int result = oTool.encode(fileName, fileNameOut, null);
         if (result == 0){
             print("Encode is complete. Output file is: " + fileNameOut);
+            updateList(selectName + ".opus");
         } else{
             print("Encode failed");
         }
@@ -83,8 +121,8 @@ public class oplayer extends Activity {
     public void btnPlayClick(View v) {
         if(opusPlayer == null)
             opusPlayer = new OpusPlayer();
-        String SDPATH = Environment.getExternalStorageDirectory().getPath() + "/";
-        String fileName = SDPATH + "test.opus";
+
+        String fileName = path + adapter.getItem(lvFiles.getCheckedItemPosition());
         opusPlayer.play(fileName);
         print("start palying" + fileName);
     }
@@ -92,8 +130,8 @@ public class oplayer extends Activity {
     public void btnPausePClick(View v) {
         if(opusPlayer == null)
             return;
-        String SDPATH = Environment.getExternalStorageDirectory().getPath() + "/";
-        String fileName = SDPATH + "test.opus";
+        String fileName = path + adapter.getItem(lvFiles.getCheckedItemPosition());
+
         String str = opusPlayer.toggle(fileName);
         ((Button)v).setText(str);
         print("You might want to" + str);
@@ -113,10 +151,20 @@ public class oplayer extends Activity {
     public void btnRecordClick(View v) {
         if(opusRecorder == null)
             opusRecorder = new OpusRecorder();
-        String SDPATH = Environment.getExternalStorageDirectory().getPath() + "/";
-        String fileName = SDPATH + "test.opus";
+
+        String base = "record";
+        String name = "record";
+        int i = 0;
+        for(i = 1; i < 100; i++){
+            name = base + i + ".opus";
+            if(!lstFiles.contains(name))
+                break;
+        }
+        String fileName = path + name;
         opusRecorder.startRecording(fileName);
         print("Start Recording.. Save file to: " + fileName);
+
+        updateList(name);
     }
 
 }
