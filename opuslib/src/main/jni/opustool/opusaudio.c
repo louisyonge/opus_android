@@ -322,6 +322,7 @@ int initRecorder(const char *path) {
         coding_rate = 8000;
     }
 
+ //   frame_size=frame_size/(48000/coding_rate);
     if (rate != coding_rate) {
         LOGE("Invalid rate");
         return 0;
@@ -428,8 +429,6 @@ int initRecorder(const char *path) {
 int writeFrame(uint8_t *framePcmBytes, unsigned int frameByteCount) {
     int cur_frame_size = frame_size;
     _packetId++;
-    LOGD("100 th char is %c",framePcmBytes[100]);
-    LOGD("opus: Write frame, bytecont is %d", frameByteCount);
 
     opus_int32 nb_samples = frameByteCount / 2;
     total_samples += nb_samples;
@@ -462,7 +461,6 @@ int writeFrame(uint8_t *framePcmBytes, unsigned int frameByteCount) {
             LOGE("Encoding failed: %s. Aborting.", opus_strerror(nbBytes));
             return 0;
         }
-        LOGD("bytes that encoded is: %d",nbBytes);
 
         enc_granulepos += cur_frame_size * 48000 / coding_rate;
         size_segments = (nbBytes + 255) / 255;
@@ -484,7 +482,6 @@ int writeFrame(uint8_t *framePcmBytes, unsigned int frameByteCount) {
 
         pages_out++;
     }
-    LOGD("byte_written is %lld", bytes_written);
 
     op.packet = (unsigned char *)_packet;
     op.bytes = nbBytes;
