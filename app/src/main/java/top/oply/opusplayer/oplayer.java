@@ -26,7 +26,7 @@ public class oplayer extends Activity {
     private OpusTool oTool = new OpusTool();
 
     private ListView lvFiles;
-    private List<String> lstFiles = new ArrayList<String>();
+    private List<String> lstFiles = new ArrayList<>();
     private ArrayAdapter<String> adapter;
     private String path;
 
@@ -38,9 +38,11 @@ public class oplayer extends Activity {
 
         //initial listView
         lvFiles = (ListView)findViewById(R.id.lvFile);
+        lvFiles.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         initData();
         adapter = new ArrayAdapter<String>( this , android.R.layout.simple_list_item_single_choice,lstFiles);
         lvFiles.setAdapter(adapter);
+        lvFiles.setItemChecked(lstFiles.size()-1, true);
      }
     private List<String> initData(){
         lstFiles = new ArrayList<String>();
@@ -63,6 +65,7 @@ public class oplayer extends Activity {
         else {
             lstFiles.add(str);
             adapter.notifyDataSetChanged();
+            lvFiles.setItemChecked(lstFiles.size()-1, true);
         }
 
     }
@@ -124,7 +127,7 @@ public class oplayer extends Activity {
 
         String fileName = path + adapter.getItem(lvFiles.getCheckedItemPosition());
         opusPlayer.play(fileName);
-        print("start palying" + fileName);
+        print("start palying..." + fileName);
     }
 
     public void btnPausePClick(View v) {

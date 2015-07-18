@@ -1,32 +1,29 @@
 # README #
-
 Welcome to the Opus demo for Android.
 
-### What is this repository for? ###
-
+### Summary ###
 * Quick summary:
-The is a demo on how to use Opus codec for Android project, including audio record, playback, encode and decode. Development IDE is Android Studio.  
-* Version
-1.0
-* [Git](https://bitbucket.org/louisyoung/opus_android.git)
+The is a demo on how to use Opus codec for Android project, including audio record, playback, encode and decode.  
 
-### How do I get set up? ###
+
+### Getting started ###
+* pre-requisites
+JDK v1.8 or higher
+SDK v2.2.1 or higher
+NDK  r10d or higher
+Android Studio (with SDK) 1.2.1 or higher
+
 
 * Summary of set up:
-SDK, NDK, Android studio
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Get the source code.
+* [Git](https://bitbucket.org/louisyoung/opus_android.git)
+Open it in Android Studio, and modify the path of SDK and NDK in the file "local.properties"
+Compile and run.
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+### Open Projects ###
+*Opus [Git](git://git.opus-codec.org/opus.git)
+*Opus-tools [Git](git://git.xiph.org/opus-tools.git)
+*Opusfile [Git](git://git.xiph.org/opusfile.git)
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### Enjoy ###

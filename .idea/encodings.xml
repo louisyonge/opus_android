@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/opuslib/src/main/jni/Android.mk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/opuslib/src/main/jni/include/config.h" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
