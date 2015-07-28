@@ -19,6 +19,16 @@ public class Utils {
         return str;
     }
 
+    static String getExtention(String fileName) {
+        String extension = "";
+
+        int i = fileName.lastIndexOf('.');
+        if (i > 0) {
+            extension = fileName.substring(i+1);
+        }
+        return extension;
+    }
+
     static void printE(String tag, Exception e){
         StringWriter sw = new StringWriter();
         PrintWriter pw = new PrintWriter(sw);

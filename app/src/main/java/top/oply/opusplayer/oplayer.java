@@ -78,7 +78,7 @@ public class oplayer extends Activity {
 
     public void btnDecClick(View view){
 
-        String selectName = adapter.getItem(lvFiles.getSelectedItemPosition());
+        String selectName =      adapter.getItem(lvFiles.getCheckedItemPosition());
         String fileName = path + selectName;
 
         File f = new File(fileName);
@@ -89,7 +89,7 @@ public class oplayer extends Activity {
         String fileNameOut = fileName + ".wav";
         print("Start decoding...");
         Log.d("encode:", oTool.nativeGetString());
-        int result = oTool.decode(fileName,fileNameOut, null);
+        int result = oTool.decode(fileName, fileNameOut, null);
         if (result == 0){
             String str = "Decode is complete. Output file is: " + fileNameOut;
             updateList(selectName + ".wav");
@@ -101,7 +101,7 @@ public class oplayer extends Activity {
     }
 
     public void btnEncClick(View view){
-        String selectName = adapter.getItem(lvFiles.getSelectedItemPosition());
+        String selectName = adapter.getItem(lvFiles.getCheckedItemPosition());
         String fileName = path + selectName;
         File f = new File(fileName);
         if (!f.exists()){
@@ -126,8 +126,14 @@ public class oplayer extends Activity {
             opusPlayer = new OpusPlayer();
 
         String fileName = path + adapter.getItem(lvFiles.getCheckedItemPosition());
-        opusPlayer.play(fileName);
-        print("start palying..." + fileName);
+        if(Utils.getExtention(fileName).equals("opus")) {
+            opusPlayer.play(fileName);
+            print("start palying..." + fileName);
+        }
+        else {
+            print("This demo only support opus file's playback.");
+        }
+
     }
 
     public void btnPausePClick(View v) {

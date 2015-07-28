@@ -36,7 +36,7 @@ public class OpusPlayer {
 
     public void play(String fileName) {
         if (state != STATE_NONE) {
-            destroyPlayer();
+            stop();
         }
         state = STATE_NONE;
         currentFileName = fileName;
