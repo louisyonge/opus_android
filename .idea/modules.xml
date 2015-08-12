@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OpusPlayer.iml" filepath="$PROJECT_DIR$/OpusPlayer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oplayer/oplayer.iml" filepath="$PROJECT_DIR$/oplayer/oplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/opuslib/opuslib.iml" filepath="$PROJECT_DIR$/opuslib/opuslib.iml" />
     </modules>
   </component>

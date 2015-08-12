@@ -140,7 +140,6 @@ public class oplayer extends Activity {
         if(opusPlayer == null)
             return;
         String fileName = path + adapter.getItem(lvFiles.getCheckedItemPosition());
-
         String str = opusPlayer.toggle(fileName);
         ((Button)v).setText(str);
         print("You might want to" + str);

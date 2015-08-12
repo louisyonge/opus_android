@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OPlayer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_about">About</string>
+    <string name="action_licenses">Licenses</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="frg_play">Play</string>
+    <string name="frg_record">Record</string>
+    <string name="frg_convert">Convert</string>
+
+    <string name="err_playlist_empty">There is no opus file now. Please import some first.</string>
+</resources>

@@ -13,9 +13,9 @@ public class OpusTool {
     static {
         try {
             System.loadLibrary("opustool");
-            Log.i(TAG, "loaded library ");
+            Log.d(TAG, "loaded library ");
         } catch (UnsatisfiedLinkError e) {
-            Log.i(TAG, "Could not load library ");
+            Log.e(TAG, "Could not load library ");
         }
     }
 
@@ -141,4 +141,23 @@ public class OpusTool {
      * @return pcm duration
      */
     public native long getTotalPcmDuration();
+
+    /**
+     * Offset of actual sound for playback, whose units is seconds
+     *
+     * @return time
+     */
+    public long getCurrentPosition() {
+        return getPcmOffset() / 48000;
+    }
+
+    /**
+     * Total duration of an opus file, whose units is second
+     *
+     * @return pcm duration
+     */
+    public long getTotalDuration() {
+        return getTotalPcmDuration() / 48000;
+    }
+
 }

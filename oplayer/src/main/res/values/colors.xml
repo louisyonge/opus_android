@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="blue">#0303ff</color>
+    <color name="grey">#4a4a4a</color>
+    <color name="red">#ff0000</color>
+    <color name="none">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="mchoosen">#ff37474f</color>
+	<color name="mhighlights">#243639</color>
+</resources>
