@@ -30,6 +30,14 @@
         <option name="packageNamePattern" value="" />
         <option name="pid" value="" />
       </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="" />
+        <option name="name" value="MainActivity" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="184282" />
+      </filter>
     </filters>
   </component>
   <component name="AndroidLayouts">
@@ -44,69 +52,148 @@
       </layout>
     </layouts>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="222f552e-0657-4fb0-bd88-343d123ebb52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_next_pressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_pause_pressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_play_pressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_prev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_prev_pressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_record.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_record_pressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_stoprecording.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/icon_stoprecording_pressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/prev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusEvent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTrackInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/PageViewAdaptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_next.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_pause.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_play.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_prev.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_record.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_stop_recording.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/layout/header.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/listview_color.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/layout/playlist_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/viewpagerindicator_release_.xml" />
-      <change type="DELETED" beforePath="C:\opus\OpusPlayer\opuslib\build\intermediates\manifests\tmp\manifestMerger1149891131549229242.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/build/intermediates/classes/release/top/oply/opuslib/OpusTool.class" afterPath="$PROJECT_DIR$/opuslib/build/intermediates/classes/release/top/oply/opuslib/OpusTool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/build/intermediates/classes/debug/top/oply/opuslib/Utils.class" afterPath="$PROJECT_DIR$/opuslib/build/intermediates/classes/debug/top/oply/opuslib/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/opuslib/build/intermediates/bundles/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/opuslib/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/build/intermediates/bundles/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/opuslib/build/intermediates/bundles/release/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/build/intermediates/bundles/release/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/opuslib/build/intermediates/bundles/release/aapt/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_convert.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_convert.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_convert.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_convert.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_convert_config.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_convert_config.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_convert_config.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_convert_config.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_convert_config_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_convert_config_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_convert_config_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_convert_config_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_convert_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_convert_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_convert_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_convert_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_converting.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_converting.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_converting.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_converting.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_next_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_next_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_next_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_next_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_pause_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_pause_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_pause_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_play_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_play_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_play_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_prev_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_prev_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_prev_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_prev_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_record.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_record.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_record.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_record.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_record_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_record_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_record_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_record_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_stoprecording.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_stoprecording.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_stoprecording.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_stoprecording.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_stoprecording_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_stoprecording_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_stoprecording_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_stoprecording_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_wav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_wav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_wav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_wav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_wav_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/icon_wav_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/icon_wav_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/icon_wav_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/ConvertParam.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/aFileChooser_release_.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_gif_drawable_.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_convert.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_convert_config_pressed.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_enc_config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_import_wav.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\.idea\libraries\support_annotations_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\.idea\libraries\support_v4_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_next.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_next_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_prev.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_prev_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_record.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_record_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_stoprecording.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_stoprecording_pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\next.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\pause.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\play.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\prev.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\record.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\stop_playing.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\stop_recording.png" afterPath="" />
+      <change type="MOVED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_pause.png" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_pause.png" />
+      <change type="MOVED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_pause_pressed.png" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_pause_pressed.png" />
+      <change type="MOVED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_play.png" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_play.png" />
+      <change type="MOVED" beforePath="C:\opus\OpusPlayer\oplayer\src\main\res\drawable\icon_play_pressed.png" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/icon_play_pressed.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/build/intermediates/classes/debug/top/oply/opuslib/OpusTool.class" afterPath="$PROJECT_DIR$/opuslib/build/intermediates/classes/debug/top/oply/opuslib/OpusTool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/oplayer/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/build/intermediates/manifests/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/opuslib/build/intermediates/manifests/androidTest/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/opuslib/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/jni/Application.mk" afterPath="$PROJECT_DIR$/opuslib/src/main/jni/Application.mk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java" afterPath="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java" afterPath="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusConverter.java" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusConverter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusEvent.java" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusEvent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusPlayer.java" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusPlayer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusRecorder.java" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusRecorder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusService.java" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTool.java" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTrackInfo.java" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTrackInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/Utils.java" afterPath="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_next.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_next.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_pause.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_pause.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_play.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_play.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_prev.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_prev.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_record.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_record.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_stop_recording.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_stop_recording.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/build.gradle" afterPath="$PROJECT_DIR$/oplayer/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/build.gradle" afterPath="$PROJECT_DIR$/opuslib/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_convert.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_convert.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_play.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_play.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/drawable/listview_color.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/drawable/listview_color.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/top/oply/opusplayer/oplayer.java" afterPath="$PROJECT_DIR$/app/src/main/java/top/oply/opusplayer/oplayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/oplayer.iml" afterPath="$PROJECT_DIR$/oplayer/oplayer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/jni/opustool/opusaudio.c" afterPath="$PROJECT_DIR$/opuslib/src/main/jni/opustool/opusaudio.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/opuslib.iml" afterPath="$PROJECT_DIR$/opuslib/opuslib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/layout/playlist_view.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/layout/playlist_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oplayer/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/oplayer/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/jni/opustool/top_oply_opuslib_OpusTool.c" afterPath="$PROJECT_DIR$/opuslib/src/main/jni/opustool/top_oply_opuslib_OpusTool.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opuslib/src/main/jni/opustool/top_oply_opuslib_OpusTool.h" afterPath="$PROJECT_DIR$/opuslib/src/main/jni/opustool/top_oply_opuslib_OpusTool.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OpusPlayer.iws" />
@@ -1621,74 +1708,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="OpusPlayer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding>
+                <element signature="e#1242#1243#0" expanded="true" />
+                <element signature="e#1275#1276#0" expanded="true" />
+                <element signature="e#1347#1348#0" expanded="true" />
+                <element signature="e#1394#1395#0" expanded="true" />
+                <element signature="e#5663#5664#0" expanded="true" />
+                <element signature="e#5712#5713#0" expanded="true" />
+                <element signature="e#5847#5848#0" expanded="true" />
+                <element signature="e#5898#5899#0" expanded="true" />
+                <element signature="e#5943#5944#0" expanded="true" />
+                <element signature="e#5986#5987#0" expanded="true" />
+                <element signature="e#6655#6656#0" expanded="true" />
+                <element signature="e#6697#6698#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5888889">
-              <caret line="144" column="57" selection-start-line="144" selection-start-column="57" selection-end-line="144" selection-end-column="57" />
+            <state vertical-scroll-proportion="4.4169884">
+              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1639#1660#0" expanded="true" />
-                <element signature="e#2055#2083#0" expanded="true" />
-                <element signature="e#2132#2162#0" expanded="true" />
-                <element signature="e#2213#2244#0" expanded="true" />
-                <element signature="e#4852#4862#0" expanded="true" />
-                <element signature="e#6884#6922#0" expanded="true" />
+                <element signature="e#3344#3345#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageViewAdaptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/PageViewAdaptor.java">
+      <file leaf-file-name="FrgConvert.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="oplayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/top/oply/opusplayer/oplayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="132" column="14" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
+            <state vertical-scroll-proportion="-6.4">
+              <caret line="306" column="9" selection-start-line="306" selection-start-column="9" selection-end-line="306" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="e#7418#7454#0" expanded="true" />
+                <element signature="e#8071#8106#0" expanded="true" />
+                <element signature="e#8397#8441#0" expanded="true" />
+                <element signature="e#8608#8651#0" expanded="true" />
+                <element signature="e#11107#11143#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listview_color.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/listview_color.xml">
+      <file leaf-file-name="fragment_frg_convert.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_convert.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="btn_next.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_next.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_frg_play.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_play.xml">
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.08">
+              <caret line="21" column="83" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AudioTrack.java" pinned="false" current-in-tab="false">
+        <entry file="file://D:/android/sdk/sources/android-22/android/media/AudioTrack.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+              <caret line="810" column="71" selection-start-line="810" selection-start-column="63" selection-end-line="810" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpusTool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="135" column="40" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpusService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -2116,14 +2234,24 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare :aFileChooser-release:" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareAFileChooserReleaseLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare :android-gif-drawable:" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareAndroidGifDrawableLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:appcompat-v7:22.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportAppcompatV72211Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:22.2.1" />
+                <option name="description" value="Prepare com.android.support:support-v4:22.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportV42221Library" />
+                <option name="name" value="prepareComAndroidSupportSupportV42211Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -2245,10 +2373,6 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="zipalignDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="assembleDefault" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -2330,11 +2454,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="packageReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:22.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportV42211Library" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -2716,14 +2835,24 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare :aFileChooser-release:" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/oplayer" />
+                <option name="name" value="prepareAFileChooserReleaseLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare :android-gif-drawable:" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/oplayer" />
+                <option name="name" value="prepareAndroidGifDrawableLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:appcompat-v7:22.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/oplayer" />
                 <option name="name" value="prepareComAndroidSupportAppcompatV72211Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:22.2.1" />
+                <option name="description" value="Prepare com.android.support:support-v4:22.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/oplayer" />
-                <option name="name" value="prepareComAndroidSupportSupportV42221Library" />
+                <option name="name" value="prepareComAndroidSupportSupportV42211Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/oplayer" />
@@ -2842,10 +2971,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/oplayer" />
                 <option name="name" value="validateDebugSigning" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/oplayer" />
-                <option name="name" value="zipalignDebug" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -3383,7 +3508,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5752050160023" />
+        <entry key="$PROJECT_DIR$" value="5755250649335" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -3715,8 +3840,10 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
                             <option value="$MODULE_DIR$/libs/viewpagerindicator-release.aar" />
-                            <option value="D:/android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.1/support-v4-22.2.1.aar" />
-                            <option value="D:/android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar" />
+                            <option value="$MODULE_DIR$/libs/aFileChooser-release.aar" />
+                            <option value="$MODULE_DIR$/libs/android-gif-drawable.aar" />
+                            <option value="D:/android/sdk/extras/android/m2repository/com/android/support/support-v4/22.1.1/support-v4-22.1.1.aar" />
+                            <option value="D:/android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/oplayer" />
@@ -3930,57 +4057,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/jni/opustool/top_oply_opuslib_OpusTool.c" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/jni/opustool/opusaudio.c" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/jni/include/config.h" />
-        <option value="$PROJECT_DIR$/opuslib/build.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/top/oply/opusplayer/Utils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_oplayer.xml" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/frgPlay.java" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/frgRecord.java" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/menu/menu_main.xml" />
-        <option value="$PROJECT_DIR$/oplayer/build.gradle" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_convert.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/top/oply/opusplayer/oplayer.java" />
         <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/MyReceiver.java" />
         <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/header.xml" />
         <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/opuslib/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java" />
         <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgRecord.java" />
         <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/listview_color.xml" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusConverter.java" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_play.xml" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_prev.xml" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_next.xml" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_pause.xml" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_stop_recording.xml" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_record.xml" />
         <option value="$PROJECT_DIR$/oplayer/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MyService.java" />
         <option value="$PROJECT_DIR$/oplayer/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgPlay.java" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/jni/Application.mk" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_record.xml" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusService.java" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusEvent.java" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTool.java" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/playlist_view.xml" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTrackInfo.java" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/Utils.java" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusRecorder.java" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/listview_color.xml" />
-        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusPlayer.java" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_play.xml" />
-        <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java" />
         <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/PageWiewAdaptor.java" />
         <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/PageViewAdaptor.java" />
         <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/ViewAdaptor.java" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/ListViewSimAdaptor.java" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/playlist_view.xml" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusEvent.java" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusService.java" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_play.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_pause.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_next.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_prev.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_record.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_stop_recording.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_conver_param.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_convert.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_import_wav.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/listview_color.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/text_conver_config_color.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_enc_config.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_convert_param.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_play.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_convert_config_pressed.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/ConvertParam.java" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusRecorder.java" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/Utils.java" />
+        <option value="$PROJECT_DIR$/oplayer/build.gradle" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTrackInfo.java" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_record.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusConverter.java" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/jni/Application.mk" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/jni/opustool/top_oply_opuslib_OpusTool.c" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/jni/opustool/top_oply_opuslib_OpusTool.h" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTool.java" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusPlayer.java" />
+        <option value="$PROJECT_DIR$/opuslib/src/main/jni/opustool/opusaudio.c" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_convert.xml" />
+        <option value="$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java" />
       </list>
     </option>
   </component>
@@ -4029,96 +4156,6 @@
       <pane id="Scratches">
         <subPane />
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oplayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oplayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oplayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mipmap-mdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oplayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mipmap-hdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oplayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oplayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android.support.v7.appcompat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -4156,15 +4193,9 @@
               <option name="myItemId" value="OpusPlayer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -4174,80 +4205,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opuslib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opuslib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opuslib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opuslib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpusPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opuslib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -4284,6 +4241,92 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpusPlayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpusPlayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oplayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpusPlayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpusPlayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oplayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpusPlayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpusPlayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oplayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -4337,6 +4380,26 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpusPlayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpusPlayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oplayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -4346,15 +4409,16 @@
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="C:/" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.last.selected" value="oplayer" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="CEEE860E" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="HC3AHMR02373" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_4_API_22" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="361" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="DEBUGGABLE_DEVICE" value="htc-htc_609d-HC3AHMR02373" />
     <property name="DEBUGGABLE_PROCESS" value="top.oply.opusplayer" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="UNSCRAMBLE_LOG_FILE_LAST_URL" value="" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -4362,9 +4426,11 @@
       <recent name="top.oply.opuslib" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\opus\OpusPlayer\oplayer\src\main\res\mipmap-xxhdpi" />
+      <recent name="C:\opus\OpusPlayer\oplayer\src\main\res\mipmap-xhdpi" />
+      <recent name="C:\opus\OpusPlayer\oplayer\src\main\res\mipmap-mdpi" />
+      <recent name="C:\opus\OpusPlayer\oplayer\src\main\res\mipmap-hdpi" />
       <recent name="C:\opus\OpusPlayer\oplayer\src\main\res\drawable" />
-      <recent name="C:\opus\OpusPlayer\opuslib\src\main\jni\include" />
-      <recent name="C:\opus\OpusPlayer\opuslib\src\main\jni\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\opus\OpusPlayer\oplayer\src\main\res\drawable" />
@@ -4670,30 +4736,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32535884" sideWeight="0.40873015" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29346094" sideWeight="0.62142855" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32376397" sideWeight="0.4015873" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49441788" sideWeight="0.59761906" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2452381" sideWeight="0.519573" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50717705" sideWeight="0.26507938" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49441788" sideWeight="0.40238094" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32695374" sideWeight="0.4873016" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3923445" sideWeight="0.3968254" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20733653" sideWeight="0.68650794" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54066986" sideWeight="0.5920635" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3923445" sideWeight="0.50158733" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45454547" sideWeight="0.7785714" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20574163" sideWeight="0.62460315" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50717705" sideWeight="0.26507938" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48803827" sideWeight="0.70555556" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54066986" sideWeight="0.4079365" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26031747" sideWeight="0.48042706" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46251994" sideWeight="0.4936508" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2626984" sideWeight="0.48042706" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46251994" sideWeight="0.56984127" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2452381" sideWeight="0.519573" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.523126" sideWeight="0.7349206" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3875598" sideWeight="0.768254" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4745,107 +4811,89 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/Utils.java</url>
-          <line>76</line>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java</url>
+          <line>138</line>
           <properties />
-          <option name="timeStamp" value="99" />
+          <option name="timeStamp" value="295" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java</url>
+          <line>230</line>
+          <properties />
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java</url>
+          <line>204</line>
+          <properties />
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java</url>
+          <line>343</line>
+          <properties />
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java</url>
+          <line>240</line>
+          <properties />
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusConverter.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusConverter.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java</url>
+          <line>396</line>
+          <properties />
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusPlayer.java</url>
-          <line>63</line>
+          <line>56</line>
           <properties />
-          <option name="timeStamp" value="127" />
+          <option name="timeStamp" value="313" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusRecorder.java</url>
-          <line>162</line>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusService.java</url>
+          <line>154</line>
           <properties />
-          <option name="timeStamp" value="144" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgPlay.java</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java</url>
-          <line>243</line>
-          <properties />
-          <option name="timeStamp" value="165" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgPlay.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="168" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="169" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusRecorder.java</url>
-          <line>91</line>
-          <properties />
-          <option name="timeStamp" value="171" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusRecorder.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="172" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgPlay.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="173" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgPlay.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="174" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java</url>
-          <line>316</line>
-          <properties />
-          <option name="timeStamp" value="178" />
+          <option name="timeStamp" value="319" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java</url>
-          <line>280</line>
+          <line>99</line>
           <properties />
-          <option name="timeStamp" value="184" />
+          <option name="timeStamp" value="320" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java</url>
-          <line>221</line>
+          <line>64</line>
           <properties />
-          <option name="timeStamp" value="187" />
+          <option name="timeStamp" value="321" />
         </line-breakpoint>
-        <line-breakpoint type="java-method">
-          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgPlay.java</url>
-          <line>67</line>
-          <properties class="top.oply.oplayer.FrgPlay" method="onCreateView" />
-          <option name="timeStamp" value="175" />
-        </line-breakpoint>
-        <line-breakpoint type="java-method">
-          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgPlay.java</url>
-          <line>71</line>
-          <properties class="top.oply.oplayer.FrgPlay" method="onCreateView" />
-          <option name="timeStamp" value="176" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="322" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="188" />
+      <option name="time" value="323" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
@@ -4857,401 +4905,420 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusConverter.java">
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_record.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
+        <state vertical-scroll-proportion="0.24675325">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/android/app/ContextImpl.java">
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_prev.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1146" column="0" selection-start-line="1146" selection-start-column="0" selection-end-line="1146" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.24675325">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/next.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_play.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12337662">
+          <caret line="2" column="79" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/pause.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/layout/playlist_view.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/prev.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/play.png">
-      <provider selected="true" editor-type-id="images">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding />
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/build/generated/source/r/debug/android/support/v7/appcompat/R.java">
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_convert_config_pressed.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.126583">
-          <caret line="278" column="54" selection-start-line="278" selection-start-column="45" selection-end-line="278" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.2519894">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27565983">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_prev.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20765027">
-          <caret line="4" column="78" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_stop_recording.xml">
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_convert_config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_record.xml">
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_enc_config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.2519894">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/android/widget/AdapterView.java">
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_convert.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.393401">
-          <caret line="296" column="38" selection-start-line="296" selection-start-column="38" selection-end-line="296" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_play.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.2519894">
           <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/android/content/Intent.java">
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/listview_color.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5527426">
-          <caret line="4639" column="0" selection-start-line="4639" selection-start-column="0" selection-end-line="4639" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.39522547">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://D:/android/sdk/sources/android-22/android/os/Bundle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1458886">
+          <caret line="100" column="11" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_play.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_pause.xml">
+    <entry file="file://D:/android/sdk/sources/android-22/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state vertical-scroll-proportion="-6.27592">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/android/view/ViewGroup.java">
+    <entry file="file://D:/android/sdk/sources/android-22/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="5051" column="0" selection-start-line="5051" selection-start-column="0" selection-end-line="5051" selection-end-column="0" />
+        <state vertical-scroll-proportion="-16.88796">
+          <caret line="99" column="58" selection-start-line="99" selection-start-column="58" selection-end-line="99" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.1/support-v4-22.2.1-sources.jar!/android/support/v4/app/FragmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="958" column="0" selection-start-line="958" selection-start-column="0" selection-end-line="958" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.1/support-v4-22.2.1-sources.jar!/android/support/v4/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33105803">
+          <caret line="1788" column="0" selection-start-line="1788" selection-start-column="0" selection-end-line="1788" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/android/sdk/sources/android-22/android/view/Choreographer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37201366">
+          <caret line="577" column="0" selection-start-line="577" selection-start-column="0" selection-end-line="577" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/android/sdk/sources/android-22/com/android/internal/os/ZygoteInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="804" column="0" selection-start-line="804" selection-start-column="0" selection-end-line="804" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.9726963">
+          <caret line="917" column="0" selection-start-line="917" selection-start-column="0" selection-end-line="917" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/android/app/LoadedApk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="930" column="0" selection-start-line="930" selection-start-column="0" selection-end-line="930" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/android/app/Service.java">
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/ConvertParam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="458" column="78" selection-start-line="458" selection-start-column="66" selection-end-line="458" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/android/app/IntentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1473988">
-          <caret line="130" column="26" selection-start-line="130" selection-start-column="15" selection-end-line="130" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/android/content/ContextWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opuslib/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding />
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/android/sdk/sources/android-22/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3831" column="0" selection-start-line="3831" selection-start-column="0" selection-end-line="3831" selection-end-column="0" />
+          <caret line="4110" column="0" selection-start-line="4110" selection-start-column="0" selection-end-line="4110" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/opuslib/src/main/jni/Application.mk">
+    <entry file="jar://$PROJECT_DIR$/oplayer/build/intermediates/exploded-aar/aFileChooser-release/jars/classes.jar!/com/ipaulpro/afilechooser/utils/FileUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.081196584">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.5339506">
+          <caret line="149" column="25" selection-start-line="149" selection-start-column="25" selection-end-line="149" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/device-2015-08-11-162757.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/java/text/Format.java">
+    <entry file="file://D:/android/sdk/sources/android-22/android/content/Intent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6074073">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3323782">
+          <caret line="878" column="66" selection-start-line="878" selection-start-column="54" selection-end-line="878" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/java/lang/String.java">
+    <entry file="file://D:/android/sdk/sources/android-22/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1775" column="25" selection-start-line="1775" selection-start-column="25" selection-end-line="1775" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.3323782">
+          <caret line="670" column="28" selection-start-line="670" selection-start-column="28" selection-end-line="670" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgRecord.java">
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusService.java">
+    <entry file="file://D:/android/sdk/sources/android-22/android/widget/AdapterView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8142857">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.6590258">
+          <caret line="269" column="8" selection-start-line="269" selection-start-column="8" selection-end-line="269" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTool.java">
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/PageViewAdaptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="142" column="45" selection-start-line="142" selection-start-column="45" selection-end-line="142" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-0.3209169">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/layout/playlist_view.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/top/oply/opusplayer/oplayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.137536">
+          <caret line="42" column="107" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="107" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTrackInfo.java">
+    <entry file="file://$PROJECT_DIR$/oplayer/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4555874">
+          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1870#1871#0" expanded="false" />
-            <element signature="e#1920#1921#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.7277937">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTrackInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59099805">
+          <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0019569">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgPlay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/android/view/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/android/sdk/sources/android-22/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1777778">
-          <caret line="877" column="38" selection-start-line="877" selection-start-column="38" selection-end-line="877" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opuslib/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12222222">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusRecorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75555557">
-          <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.8814816">
-          <caret line="205" column="77" selection-start-line="205" selection-start-column="77" selection-end-line="205" selection-end-column="77" />
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_record.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84444445">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/listview_color.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_play.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-          <folding />
+          <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
+          <folding>
+            <element signature="e#1046#1047#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
+            <element signature="e#2785#2786#0" expanded="false" />
+            <element signature="e#2827#2828#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/top/oply/opusplayer/oplayer.java">
+    <entry file="file://D:/android/sdk/sources/android-22/android/media/AudioFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.733696">
+          <caret line="62" column="71" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/jni/Application.mk">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="132" column="14" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/jni/include/log.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28070176">
+          <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/drawable/btn_next.xml">
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/jni/opustool/top_oply_opuslib_OpusTool.c">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
+          <caret line="223" column="9" selection-start-line="222" selection-start-column="3" selection-end-line="230" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/PageViewAdaptor.java">
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusRecorder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="40" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/jni/opustool/top_oply_opuslib_OpusTool.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="29" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/jni/opustool/opusaudio.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5135136">
+          <caret line="613" column="0" selection-start-line="613" selection-start-column="0" selection-end-line="613" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.08">
+          <caret line="21" column="83" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/android/sdk/sources/android-22/android/media/AudioTrack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="810" column="71" selection-start-line="810" selection-start-column="63" selection-end-line="810" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/res/layout/fragment_frg_convert.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opuslib/src/main/java/top/oply/opuslib/OpusPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1394#1395#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+            <element signature="e#5712#5713#0" expanded="true" />
+            <element signature="e#5847#5848#0" expanded="true" />
+            <element signature="e#5898#5899#0" expanded="true" />
+            <element signature="e#5943#5944#0" expanded="true" />
+            <element signature="e#5986#5987#0" expanded="true" />
+            <element signature="e#6655#6656#0" expanded="true" />
+            <element signature="e#6697#6698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/FrgConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.4">
+          <caret line="306" column="9" selection-start-line="306" selection-start-column="9" selection-end-line="306" selection-end-column="9" />
+          <folding>
+            <element signature="e#7418#7454#0" expanded="true" />
+            <element signature="e#8071#8106#0" expanded="true" />
+            <element signature="e#8397#8441#0" expanded="true" />
+            <element signature="e#8608#8651#0" expanded="true" />
+            <element signature="e#11107#11143#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oplayer/src/main/java/top/oply/oplayer/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5888889">
-          <caret line="144" column="57" selection-start-line="144" selection-start-column="57" selection-end-line="144" selection-end-column="57" />
+        <state vertical-scroll-proportion="4.4169884">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1639#1660#0" expanded="true" />
-            <element signature="e#2055#2083#0" expanded="true" />
-            <element signature="e#2132#2162#0" expanded="true" />
-            <element signature="e#2213#2244#0" expanded="true" />
-            <element signature="e#4852#4862#0" expanded="true" />
-            <element signature="e#6884#6922#0" expanded="true" />
+            <element signature="e#3344#3345#0" expanded="true" />
           </folding>
         </state>
       </provider>

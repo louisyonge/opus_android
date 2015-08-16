@@ -37,6 +37,7 @@ public class OpusEvent {
     public static final String EVENT_PLAY_DURATION = "PLAY_DURATION";
     public static final String EVENT_PLAY_TRACK_INFO = "PLAY_TRACK_INFO";
     public static final String EVENT_RECORD_PROGRESS = "RECORD_PROGRESS";
+    public static final String EVENT_MSG = "EVENT_MSG";
 
 
 
@@ -70,6 +71,20 @@ public class OpusEvent {
     public void sendEvent(int eventType) {
         Bundle b = new Bundle();
         b.putInt(EVENT_TYPE,eventType);
+        Intent i = new Intent();
+        i.setAction(mAction);
+        i.putExtras(b);
+        mContext.sendBroadcast(i);
+    }
+
+    /**
+     * Send Event to UI
+     * @param eventType
+     */
+    public void sendEvent(int eventType, String msg) {
+        Bundle b = new Bundle();
+        b.putInt(EVENT_TYPE,eventType);
+        b.putString(EVENT_MSG, msg);
         Intent i = new Intent();
         i.setAction(mAction);
         i.putExtras(b);

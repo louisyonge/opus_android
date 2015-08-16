@@ -5,10 +5,8 @@ import android.media.AudioRecord;
 import android.media.MediaRecorder;
 import android.util.Log;
 
+import java.io.File;
 import java.nio.ByteBuffer;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -17,14 +15,14 @@ import java.util.TimerTask;
  */
 public class OpusRecorder {
     private OpusRecorder(){}
-    private static volatile OpusRecorder singleton ;
+    private static volatile OpusRecorder oRecorder ;
     public static OpusRecorder getInstance(){
-        if(singleton==null)
+        if(oRecorder == null)
             synchronized(OpusRecorder.class){
-                if(singleton==null)
-                    singleton = new OpusRecorder();
+                if(oRecorder == null)
+                    oRecorder = new OpusRecorder();
             }
-        return singleton;
+        return oRecorder;
     }
 
     private static final int STATE_NONE = 0;
@@ -55,25 +53,7 @@ public class OpusRecorder {
             writeAudioDataToFile();
         }
     }
-    private String initRecordFileName() {
-        String name;
-        String extention = ".opus";
-        OpusTrackInfo info =  OpusTrackInfo.getInstance();
-        HashSet<String> set = new HashSet<String>(100);
-        List<Map<String, Object>> lst =  info.getTrackInfor().getList();
-        for (Map<String, Object>map : lst) {
-            set.add(map.get(OpusTrackInfo.TITLE_TITLE).toString());
-        }
-        name = "OpusRecord";
-        int i = 0;
-        while (true) {
-            i++;
-            if(!set.contains(name + i + extention))
-                break;
-        }
 
-        return info.getAppExtDir() + name + i + extention;
-    }
 
     public void startRecording(final String file) {
 
@@ -88,8 +68,12 @@ public class OpusRecorder {
                 RECORDER_AUDIO_ENCODING, bufferSize);
         recorder.startRecording();
         state = STATE_STARTED;
-
-        filePath = file.isEmpty() ? initRecordFileName() : file;
+        if(file.isEmpty()) {
+            filePath = OpusTrackInfo.getInstance().getAValidFileName("OpusRecord");
+        } else {
+            filePath = file;
+        }
+//        filePath = file.isEmpty() ? initRecordFileName() : file;
         int rst = opusTool.startRecording(filePath);
         if (rst != 1) {
             if(mEventSender != null)
@@ -160,8 +144,10 @@ public class OpusRecorder {
             }
 
         }
-        if(mEventSender != null)
-            mEventSender.sendEvent(OpusEvent.RECORD_FINISHED);
+        if(mEventSender != null) {
+            File f = new File(filePath);
+            mEventSender.sendEvent(OpusEvent.RECORD_FINISHED,f.getName());
+        }
         OpusTrackInfo info =  OpusTrackInfo.getInstance();
         info.addOpusFile(filePath);
     }

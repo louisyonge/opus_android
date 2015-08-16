@@ -16,6 +16,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            jniDebuggable true
+            zipAlignEnabled false
+            renderscriptDebuggable false
+            pseudoLocalesEnabled false
+        }
     }
 }
 
@@ -29,7 +35,9 @@ repositories {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile(name: 'viewpagerindicator-release', ext: 'aar')
-    compile 'com.android.support:support-v4:22.2.1'
+    compile(name: 'aFileChooser-release', ext: 'aar')
+    compile(name: 'android-gif-drawable', ext: 'aar')
+    compile 'com.android.support:support-v4:22.1.1'
     compile project(':opuslib')
 }
 

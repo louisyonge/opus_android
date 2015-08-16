@@ -120,3 +120,6 @@ build/intermediates/dex-cache/cache.xml
 opuslib/build/intermediates/classes/debug/top/oply/opuslib/OpusConverter.class
 opuslib/build/intermediates/classes/debug/top/oply/opuslib/OpusEvent.class
 opuslib/build/intermediates/classes/debug/top/oply/opuslib/OpusService.class
+opuslib/build/intermediates/classes/debug/top/oply/opuslib/OpusRecorder$MyTimerTask.class
+opuslib/build/intermediates/classes/debug/top/oply/opuslib/Utils$AudioTime.class
+opuslib/build/intermediates/manifests/tmp/manifestMerger8628656085089666978.xml

@@ -14,14 +14,14 @@ public class OpusPlayer {
 
     private OpusPlayer(){
     }
-    private static volatile OpusPlayer singleton ;
+    private static volatile OpusPlayer oPlayer ;
     public static OpusPlayer getInstance(){
-        if(singleton==null)
+        if(oPlayer == null)
             synchronized(OpusPlayer.class){
-                if(singleton==null)
-                    singleton = new OpusPlayer();
+                if(oPlayer == null)
+                    oPlayer = new OpusPlayer();
             }
-        return singleton;
+        return oPlayer;
     }
 
     private OpusTool opusLib = new OpusTool();
@@ -32,10 +32,11 @@ public class OpusPlayer {
 
     private volatile int state = STATE_NONE;
     private AudioTrack audioTrack;
-    private int bufferSize;
+    private static final int minBufferSize = 1024*8;
+    int bufferSize = 0;
+    private int channel = 0;
 
-    private long lastNoficationTime = 0;
-
+    private long lastNotificationTime = 0;
     private String currentFileName;
 
     private volatile Thread playTread = new Thread();
@@ -73,10 +74,18 @@ public class OpusPlayer {
                 mEventSender.sendEvent(OpusEvent.PLAYING_FAILED);
             return;
         }
-
         try {
-            bufferSize = AudioTrack.getMinBufferSize(48000, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
-            audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, 48000, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT, bufferSize, AudioTrack.MODE_STREAM);
+            channel = opusLib.getChannelCount();
+            int trackChannel = 0;
+            if (channel == 1)
+                trackChannel = AudioFormat.CHANNEL_OUT_MONO;
+            else
+                trackChannel = AudioFormat.CHANNEL_OUT_STEREO;
+
+            bufferSize = AudioTrack.getMinBufferSize(48000, trackChannel, AudioFormat.ENCODING_PCM_16BIT);
+            bufferSize = (bufferSize > minBufferSize)? bufferSize : minBufferSize;
+            audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, 48000, trackChannel, AudioFormat.ENCODING_PCM_16BIT, bufferSize, AudioTrack.MODE_STREAM);
+
             audioTrack.play();
         } catch (Exception e) {
             Utils.printE(TAG, e);
@@ -198,10 +207,8 @@ public class OpusPlayer {
     }
 
     private void notifyProgress() {
-
-        float scale = 0;
         //notify every 1 second
-        if(System.currentTimeMillis() - lastNoficationTime >= 1000) {
+        if(System.currentTimeMillis() - lastNotificationTime >= 1000) {
             if(mEventSender != null)
                 mEventSender.sendProgressEvent(getPosition(), getDuration());
         }
@@ -209,11 +216,15 @@ public class OpusPlayer {
 
     private void destroyPlayer() {
         opusLib.closeOpusFile();
-        if (audioTrack != null ) {
-            audioTrack.pause();
-            audioTrack.flush();
-            audioTrack.release();
-            audioTrack = null;
+        try {
+            if (audioTrack != null ) {
+                audioTrack.pause();
+                audioTrack.flush();
+                audioTrack.release();
+                audioTrack = null;
+            }
+        } catch (Exception e) {
+            Utils.printE(TAG, e);
         }
     }
 

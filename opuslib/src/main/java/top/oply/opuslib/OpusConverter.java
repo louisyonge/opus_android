@@ -46,7 +46,8 @@ public class OpusConverter {
             state = STATE_NONE;
 
             if(mEventSender != null)
-                mEventSender.sendEvent(OpusEvent.CONVERT_FINISHED);
+                mEventSender.sendEvent(OpusEvent.CONVERT_FINISHED, outputFile);
+            OpusTrackInfo.getInstance().addOpusFile(outputFile);
         }
     }
 

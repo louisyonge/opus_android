@@ -6,22 +6,25 @@ import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+
+;
 
 /**
  * Created by young on 2015/8/7.
  */
 public class OpusTrackInfo {
 
-    private static volatile OpusTrackInfo singleton ;
+    private static volatile OpusTrackInfo oTrackInfo ;
     public static OpusTrackInfo getInstance(){
-        if(singleton==null)
+        if(oTrackInfo == null)
             synchronized(OpusTrackInfo.class){
-                if(singleton==null)
-                    singleton = new OpusTrackInfo();
+                if(oTrackInfo == null)
+                    oTrackInfo = new OpusTrackInfo();
             }
-        return singleton;
+        return oTrackInfo;
     }
 
     private String TAG = OpusTrackInfo.class.getName();
@@ -37,6 +40,7 @@ public class OpusTrackInfo {
     public static final String TITLE_ABS_PATH = "ABS_PATH";
     public static final String TITLE_DURATION = "DURATION";
     public static final String TITLE_IMG = "TITLE_IMG";
+    public static final String TITLE_IS_CHECKED = "TITLE_IS_CHECKED";
 
     public void setEvenSender(OpusEvent opusEven) {
         mEventSender = opusEven;
@@ -64,6 +68,7 @@ public class OpusTrackInfo {
             map.put(TITLE_ABS_PATH, file);
             mAudioTime.setTimeInSecond(mTool.getTotalDuration());
             map.put(TITLE_DURATION, mAudioTime.getTime());
+            map.put(TITLE_IS_CHECKED,false);
             //TODO: get imagin from opus files
             map.put(TITLE_IMG, 0);
             mTrackInforList.add(map);
@@ -78,10 +83,10 @@ public class OpusTrackInfo {
     }
 
     public void sendTrackInforToUi() {
-        mEventSender.sendTrackinforEvent(mTrackInforList);
+        if(mEventSender != null)
+            mEventSender.sendTrackinforEvent(mTrackInforList);
     }
     public AudioPlayList getTrackInfor() {
-        mEventSender.sendTrackinforEvent(mTrackInforList);
         return mTrackInforList;
     }
 
@@ -95,28 +100,52 @@ public class OpusTrackInfo {
         mThread = new Thread(new MyThread(), "Opus Trc Trd");
         mThread.start();
     }
-    private void prepareTrackInfor(File file) {
-        File[] files = file.listFiles();
-        for(File f : files) {
-            if (f.isFile()) {
-                String name = f.getName();
-                String absPath = f.getAbsolutePath();
-                if ("opus".equalsIgnoreCase(Utils.getExtention(name))
-                        && mTool.openOpusFile(absPath) != 0) {
-                    Map<String, Object> map = new HashMap<String, Object>();
-                    map.put(TITLE_TITLE, f.getName());
-                    map.put(TITLE_ABS_PATH,absPath);
-                    mAudioTime.setTimeInSecond(mTool.getTotalDuration());
-                    map.put(TITLE_DURATION, mAudioTime.getTime());
-                    //TODO: get imagin from opus files
-                    map.put(TITLE_IMG, 0);
-                    mTrackInforList.add(map);
-                    mTool.closeOpusFile();
-                }
 
-            } else if (f.isDirectory()){
-                prepareTrackInfor(f);
+    public String getAValidFileName(String prefix) {
+        String name = prefix;
+        String extention = ".opus";
+        HashSet<String> set = new HashSet<String>(100);
+        List<Map<String, Object>> lst =  getTrackInfor().getList();
+        for (Map<String, Object>map : lst) {
+            set.add(map.get(OpusTrackInfo.TITLE_TITLE).toString());
+        }
+        int i = 0;
+        while (true) {
+            i++;
+            if(!set.contains(name + i + extention))
+                break;
+        }
+
+        return appExtDir + name + i + extention;
+    }
+
+    private void prepareTrackInfor(File file) {
+        try {
+            File[] files = file.listFiles();
+            for(File f : files) {
+                if (f.isFile()) {
+                    String name = f.getName();
+                    String absPath = f.getAbsolutePath();
+                    if ("opus".equalsIgnoreCase(Utils.getExtention(name))
+                            && mTool.openOpusFile(absPath) != 0) {
+                        Map<String, Object> map = new HashMap<String, Object>();
+                        map.put(TITLE_TITLE, f.getName());
+                        map.put(TITLE_ABS_PATH,absPath);
+                        mAudioTime.setTimeInSecond(mTool.getTotalDuration());
+                        map.put(TITLE_DURATION, mAudioTime.getTime());
+                        //TODO: get imagin from opus files
+                        map.put(TITLE_IS_CHECKED,false);
+                        map.put(TITLE_IMG, 0);
+                        mTrackInforList.add(map);
+                        mTool.closeOpusFile();
+                    }
+
+                } else if (f.isDirectory()){
+                    prepareTrackInfor(f);
+                }
             }
+        } catch (Exception e) {
+            Utils.printE(TAG, e);
         }
     }
 
@@ -125,7 +154,7 @@ public class OpusTrackInfo {
 
         }
         public static final long serialVersionUID=1234567890987654321L;
-        private List<Map<String, Object>> mAudioInforList = new ArrayList<Map<String, Object>>();
+        private List<Map<String, Object>> mAudioInforList = new ArrayList<Map<String, Object>>(32);
 
         public void add(Map<String, Object> map) {
             mAudioInforList.add(map);
@@ -133,12 +162,21 @@ public class OpusTrackInfo {
         public List<Map<String, Object>> getList() {
             return mAudioInforList;
         }
+        public boolean isEmpty() {
+            return mAudioInforList.isEmpty();
+        }
+        public int size() {
+            return mAudioInforList.size();
+        }
+        public void clear() {
+            mAudioInforList.clear();
+        }
     }
 
     class MyThread implements Runnable {
         public void run() {
             prepareTrackInfor(requestDirFile);
-            mEventSender.sendTrackinforEvent(mTrackInforList);
+            sendTrackInforToUi();
         }
     }
 

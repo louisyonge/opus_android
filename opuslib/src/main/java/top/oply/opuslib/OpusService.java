@@ -77,16 +77,13 @@ public class OpusService extends Service {
     }
 
     /**
-     * Request the Track info of all the opus files in the directory Dir and in
-     * its sub directorys
+     * Request the Track info of all the opus files in the directory of this app
      * @param context
-     * @param Dir
      */
-    public static void getTrackInfo(Context context, String Dir) {
+    public static void getTrackInfo(Context context) {
         Intent intent = new Intent(context, OpusService.class);
         intent.setAction(ACTION_OPUSSERVICE);
         intent.putExtra(EXTRA_CMD, CMD_GET_TRACK_INFO);
-        intent.putExtra(EXTRA_FILE_NAME, Dir);
         context.startService(intent);
     }
 
@@ -142,17 +139,16 @@ public class OpusService extends Service {
 
     public void onCreate() {
         super.onCreate();
+        mEvent = new OpusEvent(getApplicationContext());
         mPlayer = OpusPlayer.getInstance();
         mRecorder = OpusRecorder.getInstance();
         mConverter = OpusConverter.getInstance();
         mTrackInfo = OpusTrackInfo.getInstance();
 
-        mEvent = new OpusEvent(getApplicationContext());
-
+        mTrackInfo.setEvenSender(mEvent);
         mPlayer.setEventSender(mEvent);
         mRecorder.setEventSender(mEvent);
         mConverter.setEventSender(mEvent);
-        mTrackInfo.setEvenSender(mEvent);
     }
 
     public void onDestroy() {
@@ -219,7 +215,6 @@ public class OpusService extends Service {
                         handleActionSeekFile(scale);
                         break;
                     case CMD_GET_TRACK_INFO:
-                        String dir = intent.getStringExtra(EXTRA_FILE_NAME);
                         mTrackInfo.sendTrackInforToUi();
                         break;
                     default:

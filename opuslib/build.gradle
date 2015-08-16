@@ -37,6 +37,8 @@ android {
         debug {
             debuggable true
             jniDebuggable true
+            renderscriptDebuggable false
+            zipAlignEnabled false
         }
     }
 }

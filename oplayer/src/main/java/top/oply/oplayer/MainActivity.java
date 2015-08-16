@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
+import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import pl.droidsonroids.gif.GifImageButton;
 import top.oply.opuslib.OpusEvent;
 import top.oply.opuslib.OpusService;
 import top.oply.opuslib.OpusTrackInfo;
@@ -33,7 +34,9 @@ import top.oply.opuslib.Utils;
 
 
 public class MainActivity extends FragmentActivity {
-    private String TAG = MainActivity.class.getName();
+    private static final String TAG = MainActivity.class.getName();
+    private static final String SCROLL_LIST_POSITON = "SCROLL_LIST_POSITON";
+    private static final String SONG_LIST = "SONG_LIST";
 
     private OpusReceiver mReceiver = null;
     private ImageButton mBtnPlay = null;
@@ -44,42 +47,60 @@ public class MainActivity extends FragmentActivity {
     private SeekBar mPlaySeekBar = null;
     private TextView mTvPosition = null;
     private TextView mTvDuration = null;
+    private GifImageButton mBtnConvert = null;
 
     private FrgPlay frgPlay = null;
     private FrgRecord frgRecord = null;
     private FrgConvert frgConvert = null;
 
 
-    private SimpleAdapter mAdapter;
-    private List<Map<String, Object>> mSonglist = new ArrayList<Map<String, Object>>(20);
-    //selected song's positon in mSonglist
-    private volatile int listPosition = -1;
-    private int listVisiblePosition = -1;
+    private ListViewSimAdaptor mAdapter;
+    private OpusTrackInfo.AudioPlayList mSonglist;
+
+    private int listScrollPosition = -1;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+        if(savedInstanceState == null) {
+            mSonglist = new OpusTrackInfo.AudioPlayList();
+        } else {
+            listScrollPosition = savedInstanceState.getInt(SCROLL_LIST_POSITON);
+            mSonglist = (OpusTrackInfo.AudioPlayList)
+                    (savedInstanceState.getSerializable(SONG_LIST));
+        }
 
         frgPlay = FrgPlay.newInstance(getString(R.string.frg_play), "");
         frgRecord = FrgRecord.newInstance(getString(R.string.frg_record), "");
         frgConvert = FrgConvert.newInstance(getString(R.string.frg_convert), "");
 
+        mAdapter = new ListViewSimAdaptor(getApplicationContext(), mSonglist.getList(), R.layout.playlist_view,
+                new String[]{OpusTrackInfo.TITLE_TITLE, OpusTrackInfo.TITLE_DURATION,
+                        OpusTrackInfo.TITLE_IMG, OpusTrackInfo.TITLE_ABS_PATH},
+                new int[]{R.id.title, R.id.duration, R.id.img, R.id.absPath});
+
         initUI();
         initBroadcast();
+    }
 
-        //TODO something wrong
-        //Get Track list
-        //    OpusService.getTrackInfo(getApplicationContext(), "");
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putInt(SCROLL_LIST_POSITON, listScrollPosition);
+        outState.putSerializable(SONG_LIST, mSonglist);
+        super.onSaveInstanceState(outState);
+    }
+
+    public void onResume() {
+        super.onResume();
     }
 
     protected void onDestroy() {
         unregisterReceiver(mReceiver);
         super.onDestroy();
     }
+
 
     private void initBroadcast() {
         //register a broadcast
@@ -95,11 +116,10 @@ public class MainActivity extends FragmentActivity {
     }
 
     public void initConverUI(View v) {
-
+        mBtnConvert = (GifImageButton)v.findViewById(R.id.btnConvert);
     }
 
     public void initPlayUI(View v) {
-
 
         mBtnPlay = (ImageButton) v.findViewById(R.id.btnPlay);
         mLvSongs = (ListView) v.findViewById(R.id.lvSongs);
@@ -111,23 +131,15 @@ public class MainActivity extends FragmentActivity {
         mPlaySeekBar.setOnSeekBarChangeListener(new MySeekBarChangeListener());
         mPlaySeekBar.setMax(100);
 
-//        String sdcardPath = Environment.getExternalStorageDirectory().getAbsolutePath();
-//        String listFilePath = sdcardPath + "/OPlayer/" + "playlist.lst";
-//        if (Utils.isFileExist(listFilePath))
-//            mSonglist = ((OpusTrackInfo.AudioPlayList)Utils.readObj(listFilePath)).getList();
-        mAdapter = new SimpleAdapter(getApplicationContext(), mSonglist, R.layout.playlist_view,
-                new String[]{OpusTrackInfo.TITLE_TITLE, OpusTrackInfo.TITLE_DURATION,
-                        OpusTrackInfo.TITLE_IMG, OpusTrackInfo.TITLE_ABS_PATH},
-                new int[]{R.id.title, R.id.duration, R.id.img, R.id.absPath});
         mLvSongs.setAdapter(mAdapter);
+
         mLvSongs.setChoiceMode(AbsListView.CHOICE_MODE_SINGLE);
         mLvSongs.setOnItemClickListener(new MySongListClickListener());
         mLvSongs.setOnScrollListener(new MySongListScronllListener());
-        if(listVisiblePosition != -1)
-            mLvSongs.setSelection(listVisiblePosition);
-        if(listPosition != -1)
-            mLvSongs.getChildAt(listPosition).setSelected(true);
-        OpusService.getTrackInfo(this, "");
+        if(listScrollPosition != -1)
+            mLvSongs.setSelection(listScrollPosition);
+        //only to start service
+        OpusService.getTrackInfo(getApplicationContext());
     }
 
     private void initUI() {
@@ -184,54 +196,64 @@ public class MainActivity extends FragmentActivity {
 //        return super.onOptionsItemSelected(item);
 //    }
 
+
+//    public void hilightSelectedItem(int index) {
+//        try {
+//            int offset = mLvSongs.getFirstVisiblePosition();
+//            View vcurrent = mLvSongs.getChildAt(index - offset);
+//            View vLast = mLvSongs.getChildAt(listPosition - offset);
+//            if(vLast != null)
+//                vLast.setBackgroundResource(R.color.none);
+//            if(vcurrent != null)
+//                hilightSelectedItem(vcurrent);
+//            listPosition = index;
+//        } catch (Exception e) {
+//            Utils.printE(TAG, e);
+//        }
+//    }
+//    public void hilightSelectedItem(View v) {
+//        v.setBackgroundResource(R.color.mchoosen);
+//    }
+//
+//    public void hilightSelectedItem() {
+//        hilightSelectedItem(listPosition);
+//    }
+
     public boolean isSongListEmpty() {
 
         if (mSonglist.size() == 0) {
-            Toast.makeText(this, getString(R.string.err_playlist_empty), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.msg_err_playlist_empty), Toast.LENGTH_SHORT).show();
             return true;
-        }
-        if (listPosition == -1) {
-            listPosition++;
-            mLvSongs.getChildAt(listPosition).setSelected(true);
         }
         return false;
     }
     public void onBtnPlayClick(View view) {
         if(isSongListEmpty())
             return;
-        String filaName = mSonglist.get(listPosition).get(OpusTrackInfo.TITLE_ABS_PATH).toString();
-        OpusService.toggle(getApplicationContext(), filaName);
+        Map<String, Object> m = mAdapter.getHilightedItem();
+        if(m != null) {
+            String filaName = m.get(OpusTrackInfo.TITLE_ABS_PATH).toString();
+            OpusService.toggle(getApplicationContext(), filaName);
+        }
     }
 
     public void onBtnPrevClick(View view) {
-        if(isSongListEmpty())
-            return;
-        if (listPosition > 0) {
-            listPosition--;
-            mLvSongs.getChildAt(listPosition + 1).setSelected(false);
-            mLvSongs.getChildAt(listPosition).setSelected(true);
-            String filaName = mSonglist.get(listPosition).get(OpusTrackInfo.TITLE_ABS_PATH).toString();
-            OpusService.play(getApplicationContext(), filaName);
-
+        if(mAdapter.hilighItemByOffset(-1)) {
+            Map<String, Object> m = mAdapter.getHilightedItem();
+            if(m != null) {
+                String filaName = m.get(OpusTrackInfo.TITLE_ABS_PATH).toString();
+                OpusService.play(getApplicationContext(), filaName);
+            }
         }
     }
 
     public void onBtnNextClick(View view) {
-        if(isSongListEmpty())
-            return;
-        if (listPosition < mSonglist.size() -2) {
-            listPosition++;
-            mLvSongs.setSelection(listPosition -5);
-            mLvSongs.getChildAt(listPosition - 1).setSelected(false);
-            mLvSongs.getChildAt(listPosition).setSelected(true);
-            String filaName = mSonglist.get(listPosition).get(OpusTrackInfo.TITLE_ABS_PATH).toString();
-//            OpusService.play(getApplicationContext(), filaName);
-
-            mLvSongs.getChildAt(listPosition - 1).setActivated(false);
-            mLvSongs.getChildAt(listPosition).setActivated(true);
-
-
-
+        if(mAdapter.hilighItemByOffset(1)) {
+            Map<String, Object> m = mAdapter.getHilightedItem();
+            if(m != null) {
+                String filaName = m.get(OpusTrackInfo.TITLE_ABS_PATH).toString();
+                OpusService.play(getApplicationContext(), filaName);
+            }
         }
     }
 
@@ -242,30 +264,97 @@ public class MainActivity extends FragmentActivity {
     public void onBtnRecordClick(View v) {
         String filaName = "";
         OpusService.recordToggle(getApplicationContext(), filaName);
+//        String fileName = "/storage/emulated/0/OPlayer/OpusRecord1.opus";
+//        try {
+//            File f = new File(fileName);
+//            f.createNewFile();
+//            FileOutputStream in = new FileOutputStream(f);
+//            String s = "hello world!";
+//            in.write(s.getBytes());
+//            in.flush();
+//            in.close();
+//
+//        }catch (Exception e) {
+//            Utils.printE(TAG, e);
+//        }
     }
 
 
         class MySongListClickListener implements AdapterView.OnItemClickListener {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                listPosition = position;
 //                Toast.makeText(getApplicationContext(), "position is:" + position + " id: " + id, Toast.LENGTH_SHORT).show();
-                view.setSelected(true);view.setActivated(true);
-                String filaName = mSonglist.get(listPosition).get(OpusTrackInfo.TITLE_ABS_PATH).toString();
+                mAdapter.hilightItem(position);
+                String filaName = mSonglist.getList().get(position).get(OpusTrackInfo.TITLE_ABS_PATH).toString();
                 OpusService.play(getApplicationContext(), filaName);
             }
         }
+
+        public class ListViewSimAdaptor extends SimpleAdapter {
+        private int lastHilighedItemPosition = -1;
+        public ListViewSimAdaptor(Context context, List<Map<String, Object>> data,
+                                  int resource, String[] from, int[] to) {
+            super(context, data, resource, from, to);
+        }
+
+        public boolean hilighItemByOffset(int offset) {
+            return hilightItem(lastHilighedItemPosition + offset);
+        }
+
+        public boolean hilightItem(int position) {
+            try {
+                Map<String, Object> tmp;
+                if(lastHilighedItemPosition >=0 && lastHilighedItemPosition < getCount()) {
+                    tmp = (Map<String, Object>)getItem(lastHilighedItemPosition);
+                    tmp.put(OpusTrackInfo.TITLE_IS_CHECKED,false);
+                }
+                if(position >=0 && position < getCount()){
+                    tmp = (Map<String, Object>)getItem(position);
+                    tmp.put(OpusTrackInfo.TITLE_IS_CHECKED,true);
+                    lastHilighedItemPosition = position;
+                    notifyDataSetChanged();
+                    return true;
+                }
+            } catch (Exception e) {
+                Utils.printE(TAG, e);
+                return false;
+            }
+            return false;
+        }
+
+        public Map<String, Object> getHilightedItem() {
+            if(lastHilighedItemPosition < 0 && getCount() >0) {
+                hilightItem(0);
+                return (Map<String, Object>)(getItem(0));
+            }
+            if(lastHilighedItemPosition < 0 || lastHilighedItemPosition >= getCount())
+                return null;
+            return (Map<String, Object>)(getItem(lastHilighedItemPosition));
+        }
+
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View v = super.getView(position, convertView, parent);
+            boolean ischecked = (boolean)(((Map<String, Object>)getItem(position)).get(OpusTrackInfo.TITLE_IS_CHECKED));
+
+            if(ischecked) {
+                v.setBackgroundResource(R.color.mchoosen);
+            } else {
+                v.setBackgroundResource(R.color.none);
+            }
+            return v;
+        }
+    }
 
         class MySongListScronllListener implements AbsListView.OnScrollListener {
             public void onScroll(AbsListView arg0, int arg1, int arg2, int arg3) {
             }
             public void onScrollStateChanged(AbsListView view, int scrollState) {
                 if(scrollState== AbsListView.OnScrollListener.SCROLL_STATE_IDLE){
-                    listVisiblePosition = mLvSongs.getFirstVisiblePosition();  //ListPos记录当前可见的List顶端的一行的位置
+                    listScrollPosition = mLvSongs.getFirstVisiblePosition();
                 }
             }
         }
 
-    class MySeekBarChangeListener implements SeekBar.OnSeekBarChangeListener {
+        class MySeekBarChangeListener implements SeekBar.OnSeekBarChangeListener {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
@@ -293,19 +382,32 @@ public class MainActivity extends FragmentActivity {
                 int type = bundle.getInt(OpusEvent.EVENT_TYPE, 0);
                 switch (type) {
                     case OpusEvent.CONVERT_FINISHED:
-
+                        String msg = bundle.getString(OpusEvent.EVENT_MSG);
+                        Toast.makeText(getApplicationContext(),getString(R.string.msg_convert_succ) + msg
+                                , Toast.LENGTH_LONG).show();
+                        mBtnConvert.setImageResource(R.drawable.btn_convert);
+                        mBtnConvert.setClickable(true);
                         break;
                     case OpusEvent.CONVERT_FAILED:
-
+                        Toast.makeText(getApplicationContext(),getString(R.string.msg_err_convert_failed)
+                                , Toast.LENGTH_SHORT).show();
+                        mBtnConvert.setImageResource(R.drawable.btn_convert);
+                        mBtnConvert.setClickable(true);
                         break;
                     case OpusEvent.CONVERT_STARTED:
-
+                        mBtnConvert.setImageResource(R.mipmap.icon_converting);
+                        mBtnConvert.setClickable(false);
                         break;
                     case OpusEvent.RECORD_FAILED:
                         mBtnRecord.setImageResource(R.drawable.btn_record);
+                        Toast.makeText(getApplicationContext(),getString(R.string.msg_err_record_failed)
+                                , Toast.LENGTH_SHORT).show();
                         break;
                     case OpusEvent.RECORD_FINISHED:
                         mBtnRecord.setImageResource(R.drawable.btn_record);
+                        msg = bundle.getString(OpusEvent.EVENT_MSG);
+                        Toast.makeText(getApplicationContext(),getString(R.string.msg_record_succ)
+                                + msg, Toast.LENGTH_LONG).show();
                         break;
                     case OpusEvent.RECORD_STARTED:
                         mBtnRecord.setImageResource(R.drawable.btn_stop_recording);
@@ -319,17 +421,20 @@ public class MainActivity extends FragmentActivity {
                         long duration = bundle.getLong(OpusEvent.EVENT_PLAY_DURATION);
                         Utils.AudioTime t = new Utils.AudioTime();
                         t.setTimeInSecond(position);
-//                        mTvPosition.setText(t.getTime());
-//                        t.setTimeInSecond(duration);
-//                        mTvDuration.setText(t.getTime());
-//                        int progress = (int) (100 * position / duration);
-//                        mPlaySeekBar.setProgress(progress);
+                        mTvPosition.setText(t.getTime());
+                        t.setTimeInSecond(duration);
+                        mTvDuration.setText(t.getTime());
+                        if(duration != 0) {
+                            int progress = (int) (100 * position / duration);
+                            mPlaySeekBar.setProgress(progress);
+                        }
                         break;
                     case OpusEvent.PLAY_GET_AUDIO_TRACK_INFO:
                         List<Map<String, Object>> songlst = ((OpusTrackInfo.AudioPlayList) (bundle
                                 .getSerializable(OpusEvent.EVENT_PLAY_TRACK_INFO))).getList();
                         mSonglist.clear();
                         for (Map<String, Object> map : songlst) {
+                            //TODO this is a test
                             if (map.get(OpusTrackInfo.TITLE_IMG).equals(0)) {
                                 map.put(OpusTrackInfo.TITLE_IMG, R.drawable.default_music_icon);
                                 mSonglist.add(map);
@@ -357,6 +462,7 @@ public class MainActivity extends FragmentActivity {
                 }
             }
         }
+
     }
 
 

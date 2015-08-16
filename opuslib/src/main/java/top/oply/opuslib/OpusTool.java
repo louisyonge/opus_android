@@ -129,6 +129,12 @@ public class OpusTool {
     public native int getSize();
 
     /**
+     * return the Chanel account of current opus file
+     *
+     * @return Channel account
+     */
+    public native int getChannelCount();
+    /**
      * Offset of actual sound for playback
      *
      * @return offset

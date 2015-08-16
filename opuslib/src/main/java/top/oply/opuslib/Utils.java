@@ -23,6 +23,18 @@ public class Utils {
         Log.e(tag, sw.toString());
     }
 
+
+    public static String getFileName(String path) {
+        String rst = null;
+        try {
+            File f = new File(path);
+            rst = f.getName();
+        } catch (Exception e) {
+            printE("OpusTool",e);
+        }
+        return rst;
+    }
+
     public static boolean isWAVFile(String fileName) {
 
         byte header[] = new byte[16];
