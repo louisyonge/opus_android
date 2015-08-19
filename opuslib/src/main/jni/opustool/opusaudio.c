@@ -289,6 +289,7 @@ void cleanupRecorder() {
 int initRecorder(const char *path) {
     cleanupRecorder();
 
+    LOGD("in Recorder, path: %s", path);
     if (!path) {
         return 0;
     }
@@ -529,10 +530,10 @@ int _isSeekable = 0;
 int64_t _totalPcmDuration = 0;
 int64_t _currentPcmOffset = 0;
 int _finished = 0;
+int _channel_count = 0;
 static const int playerBuffersCount = 3;
 static const int playerSampleRate = 48000;
 int finished;
-int pcmOffset;
 int size;
 
 void cleanupPlayer() {
@@ -544,6 +545,7 @@ void cleanupPlayer() {
     _totalPcmDuration = 0;
     _currentPcmOffset = 0;
     _finished = 0;
+	_channel_count = 0;
 }
 
 int seekPlayer(float position) {
@@ -589,18 +591,19 @@ int initPlayer(const char *path) {
 
     _isSeekable = op_seekable(_opusFile);
     _totalPcmDuration = op_pcm_total(_opusFile, -1);
+	_channel_count = op_channel_count(_opusFile, -1);
 
     return 1;
 }
 
 void fillBuffer(uint8_t *buffer, int capacity) {
     if (_opusFile) {
-        pcmOffset = max(0, op_pcm_tell(_opusFile));
+    	_currentPcmOffset = max(0, op_pcm_tell(_opusFile));
 
         if (_finished) {
             finished = 1;
             size = 0;
-            pcmOffset = 0;
+            _currentPcmOffset = 0;
             return;
         } else {
             int writtenOutputBytes = 0;
@@ -610,7 +613,7 @@ void fillBuffer(uint8_t *buffer, int capacity) {
                 int readSamples = op_read(_opusFile, (opus_int16 *)(buffer + writtenOutputBytes), (capacity - writtenOutputBytes) / 2, NULL);
 
                 if (readSamples > 0) {
-                    writtenOutputBytes += readSamples * 2;
+                    writtenOutputBytes += readSamples * 2 * _channel_count;
                 } else {
                     if (readSamples < 0) {
                         LOGE("op_read failed: %d", readSamples);
@@ -621,8 +624,7 @@ void fillBuffer(uint8_t *buffer, int capacity) {
             }
 
             size = writtenOutputBytes;
-
-            if (endOfFileReached || pcmOffset + size == _totalPcmDuration) {
+            if (endOfFileReached || _currentPcmOffset + size == _totalPcmDuration) {
                 _finished = 1;
                 finished = 1;
             } else {
@@ -632,15 +634,19 @@ void fillBuffer(uint8_t *buffer, int capacity) {
     } else {
         memset(buffer, 0, capacity);
         size = capacity;
-        pcmOffset = _totalPcmDuration;
+        _currentPcmOffset = _totalPcmDuration;
     }
 }
+
+
+
 
 /**
  * below are some public interfaces for JavaJNI to call
  */
 
 int startRecording(const char *pathStr) {
+
     int result = initRecorder(pathStr);
     return result;
 }
@@ -662,8 +668,12 @@ int getSize() {
     return size;
 }
 
+int getChannelCount() {
+    return _channel_count;
+}
+
 long getPcmOffset() {
-    return pcmOffset;
+    return _currentPcmOffset;
 }
 
 void readOpusFile(uint8_t *buffer, int capacity) {

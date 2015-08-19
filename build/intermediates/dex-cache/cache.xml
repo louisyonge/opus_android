@@ -2,20 +2,6 @@
 <items version="2" >
 
     <item
-        jar="C:\opus\OpusPlayer\app\build\intermediates\exploded-aar\OpusPlayer\opuslib\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="310e95d6c269364e875b51f00c5aa65770ec98a0">
-        <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\classes-62401ea8312f57f9a90a13a8b2298004eabdcbc1.jar" />
-    </item>
-    <item
-        jar="C:\opus\OpusPlayer\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-547c081da787e363bbcf9d468b868938a78b19e7.jar" />
-    </item>
-    <item
         jar="C:\opus\OpusPlayer\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -30,11 +16,25 @@
         <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\classes-421af7b0c2eea0fdca7a3b06b55ea34f5b870c2b.jar" />
     </item>
     <item
+        jar="C:\opus\OpusPlayer\app\build\intermediates\exploded-aar\OpusPlayer\opuslib\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="400957051d2fb3f8524cd809c5c8ff635e2eb6c0">
+        <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\classes-62401ea8312f57f9a90a13a8b2298004eabdcbc1.jar" />
+    </item>
+    <item
         jar="D:\android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
         <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-0fe028d791c9a45999429bcba79018542da991b4.jar" />
+    </item>
+    <item
+        jar="C:\opus\OpusPlayer\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="C:\opus\OpusPlayer\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-547c081da787e363bbcf9d468b868938a78b19e7.jar" />
     </item>
 
 </items>

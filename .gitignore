@@ -68,3 +68,9 @@ opuslib/build/outputs/aar/opuslib-debug.aar
 opuslib/build/outputs/aar/opuslib-release.aar
 opuslib/src/main/libs/armeabi/libopustool.so
 opuslib/src/main/obj/local/armeabi/libopustool.so
+opuslib/src/main/libs/arm64-v8a/libopustool.so
+opuslib/src/main/libs/armeabi-v7a/libopustool.so
+opuslib/src/main/libs/mips/libopustool.so
+opuslib/src/main/libs/mips64/libopustool.so
+opuslib/src/main/libs/x86/libopustool.so
+opuslib/src/main/libs/x86_64/libopustool.so

@@ -131,6 +131,14 @@ JNIEXPORT jint JNICALL Java_top_oply_opuslib_OpusTool_getSize
 
 /*
  * Class:     top_oply_opuslib_OpusTool
+ * Method:    getChannelCount
+ * Signature: ()I
+ */
+JNIEXPORT jint JNICALL Java_top_oply_opuslib_OpusTool_getChannelCount
+  (JNIEnv *env, jobject obj) ;
+
+/*
+ * Class:     top_oply_opuslib_OpusTool
  * Method:    getPcmOffset
  * Signature: ()J
  */
