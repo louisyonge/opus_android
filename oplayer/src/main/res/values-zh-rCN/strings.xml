@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">OPlayer</string>
+
+    <string name="action_about">关于</string>
+    <string name="action_licenses">版权</string>
+    <string name="action_settings">设置</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="frg_play">播放</string>
+    <string name="frg_record">录音</string>
+    <string name="frg_convert">转码</string>
+
+<!-- TODO: Add user hints -->
+    <string name="msg_err_playlist_empty">没有opus文件，请先导入</string>
+    <string name="msg_err_record_failed">录音失败了...</string>
+    <string name="msg_err_convert_no_input">请选择WAV音频文件</string>
+    <string name="msg_err_convert_not_wav">这不是WAV文件。请重新选择WAV文件.</string>
+    <string name="msg_record_succ">录音结束。文件是：</string>
+    <string name="msg_choose_file">请选择WAV文件 </string>
+    <string name="msg_err_convert_failed">转码失败....</string>
+    <string name="msg_convert_succ">转码完成，文件是： </string>
+
+    <!-- TODO: Add Parameter names -->
+    <string name="cfg_enc_type">编码类型 </string>
+    <string name="cfg_enc_bitrage">比特率</string>
+    <string name="cfg_enc_comp">压缩率</string>
+    <string name="cfg_enc_framesize">帧大小</string>
+    <string name="cfg_enc_WAV_file">WAV文件: </string>
+</resources>

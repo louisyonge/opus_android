@@ -74,7 +74,8 @@ public class OpusTrackInfo {
             mTrackInforList.add(map);
             mTool.closeOpusFile();
 
-            mEventSender.sendTrackinforEvent(mTrackInforList);
+            if(mEventSender != null)
+                mEventSender.sendTrackinforEvent(mTrackInforList);
         }
     }
 

@@ -123,7 +123,7 @@ public class oplayer extends Activity {
 
     public void btnPlayClick(View v) {
         if(opusPlayer == null)
-            opusPlayer = new OpusPlayer();
+            opusPlayer = OpusPlayer.getInstance();
 
         String fileName = path + adapter.getItem(lvFiles.getCheckedItemPosition());
         if(Utils.getExtention(fileName).equals("opus")) {
@@ -158,7 +158,7 @@ public class oplayer extends Activity {
     }
     public void btnRecordClick(View v) {
         if(opusRecorder == null)
-            opusRecorder = new OpusRecorder();
+            opusRecorder = OpusRecorder.getInstance();
 
         String base = "record";
         String name = "record";

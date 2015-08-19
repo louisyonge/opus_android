@@ -32,7 +32,7 @@ public class OpusPlayer {
 
     private volatile int state = STATE_NONE;
     private AudioTrack audioTrack;
-    private static final int minBufferSize = 1024*8;
+    private static final int minBufferSize = 1024 * 8 * 8;
     int bufferSize = 0;
     private int channel = 0;
 

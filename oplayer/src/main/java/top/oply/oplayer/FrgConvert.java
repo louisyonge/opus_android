@@ -142,14 +142,11 @@ public class FrgConvert extends Fragment implements View.OnClickListener{
 
                 if(isConfigClicked) {
                     changeVisiblity(mFregState);
-                    btnConvertConfig.setImageResource(R.drawable.btn_convert_config_pressed);
                     hilightEncBtn(mFregState.getInt(CHOOSEN_CONFIG_BTN));
 
 
                 } else {
                     changeVisiblity(mFregState);
-                    btnConvertConfig.setImageResource(R.drawable.btn_convert_config);
-
                 }
 
                 break;
@@ -226,6 +223,7 @@ public class FrgConvert extends Fragment implements View.OnClickListener{
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+
     private void showChooser() {
         // Use the GET_CONTENT intent from the utility class
         Intent target = FileUtils.createGetContentIntent();
@@ -271,6 +269,9 @@ public class FrgConvert extends Fragment implements View.OnClickListener{
         int visible = View.INVISIBLE;
         if(b.getBoolean(IS_CONFIG_BTN_CLITCKED, false)) {
             visible = View.VISIBLE;
+            btnConvertConfig.setImageResource(R.mipmap.icon_convert_config_pressed);
+        } else {
+            btnConvertConfig.setImageResource(R.mipmap.icon_convert_config);
         }
         btnEncType.setVisibility(visible);
         btnEncComp.setVisibility(visible);
