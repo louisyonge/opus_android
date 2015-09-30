@@ -4,13 +4,22 @@ package top.oply.opuslib;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
+import android.os.HandlerThread;
 import android.os.IBinder;
+import android.os.Looper;
+import android.os.Message;
 import android.util.Log;
 
 
 public class OpusService extends Service {
 
     private String TAG = OpusService.class.getName();
+
+    //Looper
+    //Looper类用来为一个线程开启一个消息循环。Looper对象通过MessageQueue来存放消息和事件。一个线程只能有一个Looper，对应一个MessageQueue。volatile保证并发不出错
+    private volatile Looper mServiceLooper;
+    private volatile ServiceHandler mServiceHandler;
 
     //This server
     private static final String ACTION_OPUSSERVICE = "top.oply.opuslib.action.OPUSSERVICE";
@@ -136,7 +145,6 @@ public class OpusService extends Service {
         context.startService(intent);
     }
 
-
     public void onCreate() {
         super.onCreate();
         mEvent = new OpusEvent(getApplicationContext());
@@ -149,17 +157,40 @@ public class OpusService extends Service {
         mPlayer.setEventSender(mEvent);
         mRecorder.setEventSender(mEvent);
         mConverter.setEventSender(mEvent);
+
+        //启动looper
+        //在onCreate()中创建一个worker thread，而不是在onStartCommand()，这是保证有唯一的worker线程而不是多个工作线程。
+        HandlerThread thread = new HandlerThread("OpusServiceHander");
+        thread.start();
+        //为worker线程创建一个looper用来处理消息，通过消息队列使之可以依次处理多个消息，无需重新开启新的工作线程。
+        mServiceLooper = thread.getLooper();
+        //建立一个handler，可以通过该handler将消息加入线程的消息队列中，并进行消息处理。
+        mServiceHandler = new ServiceHandler(mServiceLooper);
+
     }
 
     public void onDestroy() {
+        //退出looper
+        mServiceLooper.quit();
+
         mPlayer.release();
         mRecorder.release();
         mConverter.release();
         super.onDestroy();
     }
 
+    @Override//发送消息（将消息加入到队列中）
     public int onStartCommand(Intent intent, int flags, int startId) {
+        super.onStartCommand(intent, flags, startId);
+        Message msg = mServiceHandler.obtainMessage();
+        msg.arg1 = startId;
+        msg.obj = intent;
+        mServiceHandler.sendMessage(msg);
 
+        return START_NOT_STICKY;
+    }
+
+    private void onHandleIntent(Intent intent) {
         if (intent != null) {
             final String action = intent.getAction();
 
@@ -226,7 +257,6 @@ public class OpusService extends Service {
             }
 
         }
-        return super.onStartCommand(intent, flags, startId);
     }
 
 
@@ -258,5 +288,15 @@ public class OpusService extends Service {
         mConverter.decode(fileNameIn, fileNameOut, option);
     }
 
-
+    //Hander类
+    private final class ServiceHandler extends Handler {
+        public ServiceHandler(Looper looper) {
+            super(looper);
+        }
+        @Override
+        public void handleMessage(Message msg) {
+            onHandleIntent((Intent) msg.obj);
+            //stopSelf()：如果没有挂起的消息，将结束service。
+        }
+    }
 }
