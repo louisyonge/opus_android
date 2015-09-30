@@ -1,19 +1,29 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        signingConfig {
+            keyPassword 'ly860927'
+            storeFile file('D:/Young/key/MyAndroidKey.jks')
+            storePassword 'ly860927'
+            keyAlias 'myKey'
+        }
+    }
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
-
     defaultConfig {
         applicationId "top.oply.oplayer"
         minSdkVersion 15
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName '1.1'
+        signingConfig signingConfigs.signingConfig
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true  //runProguard这个方法已经废弃了，新的方：minifyEnabled
+            zipAlignEnabled true  // 移除无用的resource文件
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
@@ -22,6 +32,8 @@ android {
             renderscriptDebuggable false
             pseudoLocalesEnabled false
         }
+    }
+    productFlavors {
     }
 }
 

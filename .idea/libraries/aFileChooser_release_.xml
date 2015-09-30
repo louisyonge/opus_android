@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="aFileChooser-release-">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/oplayer/build/intermediates/exploded-aar/aFileChooser-release/res" />
       <root url="jar://$PROJECT_DIR$/oplayer/build/intermediates/exploded-aar/aFileChooser-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/oplayer/build/intermediates/exploded-aar/aFileChooser-release/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -60,6 +60,12 @@ public class OpusTrackInfo {
     }
 
     public void addOpusFile(String file) {
+        try {
+            Thread.sleep(10);
+        } catch (Exception e) {
+            Utils.printE(TAG, e);
+        }
+
         File f = new File(file);
         if(f.exists() && "opus".equalsIgnoreCase(Utils.getExtention(file))
                 && mTool.openOpusFile(file) != 0) {
