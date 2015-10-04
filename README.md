@@ -20,7 +20,7 @@ The is a demo on how to use Opus codec for Android project, including audio reco
 * Summary of set up:
 
 1.	Get the source code.[Git] (https://bitbucket.org/louisyoung/opus_android.git)  
-2 remember to export NDK's path. eg, add following code to the end of the file "/etc/profile"
+2	remember to export NDK's path. Take Linux for example, add the following code to the end of the file "/etc/profile", and then reboot your system.
 ```
 NDK_ROOT=/usr/local/lib/android-ndk-r9d
 export PATH=$NDK_ROOT:$PATH
