@@ -155,10 +155,6 @@ opusRecorder.startRecording(fileName);
 opusRecorder.stopRecording();
 ```
 
-## Problems
-
-Audio record is not work well on HTC-609d, but functional on Xiaomi-2 and Sumsung-T700. Maybe this is a bug of HTC.
-
 
 
 Have fun!
