@@ -45,9 +45,10 @@ public class OpusConverter {
                 mTool.decode(inputFile, outputFile, option);
             state = STATE_NONE;
 
+            OpusTrackInfo.getInstance().addOpusFile(outputFile);
             if(mEventSender != null)
                 mEventSender.sendEvent(OpusEvent.CONVERT_FINISHED, outputFile);
-            OpusTrackInfo.getInstance().addOpusFile(outputFile);
+
         }
     }
 

@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc" tools:context=".oplayer">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="false" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
+        android:text="@string/dummy_content" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="#ff000000">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay" android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:inputType="none"
+            android:ems="10"
+            android:id="@+id/mainLog"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encode"
+            android:id="@+id/btnEnc"
+            android:layout_gravity="top|left|center"
+            android:onClick="btnEncClick"
+            android:layout_marginTop="120dp"
+            android:minWidth="120dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decode"
+            android:id="@+id/btnDec"
+            android:layout_gravity="top|center|right"
+            android:onClick="btnDecClick"
+            android:layout_marginTop="120dp"
+            android:minWidth="120dp"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record"
+            android:id="@+id/btnRecord"
+            android:layout_gravity="top"
+            android:minWidth="120dp"
+            android:onClick="btnRecordClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StopRecord"
+            android:id="@+id/btnStopRec"
+            android:layout_gravity="right|top"
+            android:minWidth="120dp"
+            android:onClick="btnStopRClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:id="@+id/btnPlay"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="60dp"
+            android:minWidth="120dp"
+            android:onClick="btnPlayClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PausePlaying"
+            android:id="@+id/btnPausePlay"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="60dp"
+            android:minWidth="120dp"
+            android:onClick="btnPausePClick" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StopPlaying"
+            android:id="@+id/btnStopPlay"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="60dp"
+            android:minWidth="120dp"
+            android:onClick="btnStopPClick" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvFile"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="70dp"
+            tools:listitem="@android:layout/simple_list_item_single_choice"
+            android:choiceMode="singleChoice"
+            android:clickable="true"
+            android:drawSelectorOnTop="false" />
+
+    </FrameLayout>
+
+</FrameLayout>

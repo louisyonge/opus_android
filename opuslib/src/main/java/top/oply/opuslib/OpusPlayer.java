@@ -6,6 +6,8 @@ import android.media.AudioTrack;
 import android.util.Log;
 
 import java.nio.ByteBuffer;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by young on 2015/7/2.
@@ -31,13 +33,14 @@ public class OpusPlayer {
     private static final int STATE_PAUSED = 2;
 
     private volatile int state = STATE_NONE;
+    private Lock libLock = new ReentrantLock();
     private AudioTrack audioTrack;
     private static final int minBufferSize = 1024 * 8 * 8;
     int bufferSize = 0;
     private int channel = 0;
 
     private long lastNotificationTime = 0;
-    private String currentFileName;
+    private String currentFileName = "";
 
     private volatile Thread playTread = new Thread();
     private OpusEvent mEventSender = null;
@@ -66,8 +69,9 @@ public class OpusPlayer {
                 mEventSender.sendEvent(OpusEvent.PLAYING_FAILED);
             return;
         }
-
+        libLock.lock();
         int res = opusLib.openOpusFile(currentFileName);
+        libLock.unlock();
         if (res == 0) {
             Log.e(TAG, "Open opus file error!");
             if(mEventSender != null)
@@ -94,10 +98,11 @@ public class OpusPlayer {
         }
 
         state = STATE_STARTED;
-        if(mEventSender != null)
-            mEventSender.sendEvent(OpusEvent.PLAYING_STARTED);
         playTread = new Thread( new PlayThread(),"OpusPlay Thrd");
         playTread.start();
+
+        if(mEventSender != null)
+            mEventSender.sendEvent(OpusEvent.PLAYING_STARTED);
     }
 
     protected void readAudioDataFromFile() {
@@ -109,7 +114,7 @@ public class OpusPlayer {
         while (state != STATE_NONE) {
             if (state == STATE_PAUSED){
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(10);
                     continue;
                 }
                 catch (Exception e) {
@@ -119,8 +124,10 @@ public class OpusPlayer {
 
             }
             else  if (state == STATE_STARTED) {
+                libLock.lock();
                 opusLib.readOpusFile(buffer, bufferSize);
                 int size = opusLib.getSize();
+                libLock.unlock();
 
                 if (size != 0) {
                     buffer.rewind();
@@ -163,20 +170,26 @@ public class OpusPlayer {
 
     public void stop() {
         state = STATE_NONE;
-        try {
-            Thread.sleep(200);
+        while (true) {
+            try {
+                Thread.sleep(20);
+            }
+            catch (Exception e) {
+                Log.e(TAG, e.toString());
+            }
+
+            if(!playTread.isAlive())
+                break;
         }
-        catch (Exception e) {
-            Log.e(TAG, e.toString());
-        }
+        Thread.yield();
         destroyPlayer();
     }
 
     public String toggle(String fileName) {
-        if (state == STATE_PAUSED) {
+        if (state == STATE_PAUSED && currentFileName.equals(fileName)) {
             resume();
             return "Pause";
-        } else if (state == STATE_STARTED) {
+        } else if (state == STATE_STARTED && currentFileName.equals(fileName)) {
             pause();
             return "Resume";
         } else {
@@ -203,7 +216,12 @@ public class OpusPlayer {
     }
 
     public void seekOpusFile(float scale) {
-        opusLib.seekOpusFile(scale);
+        if (state == STATE_PAUSED || state == STATE_STARTED) {
+            libLock.lock();
+            opusLib.seekOpusFile(scale);
+            libLock.unlock();
+        }
+
     }
 
     private void notifyProgress() {
@@ -215,7 +233,10 @@ public class OpusPlayer {
     }
 
     private void destroyPlayer() {
+
+        libLock.lock();
         opusLib.closeOpusFile();
+        libLock.unlock();
         try {
             if (audioTrack != null ) {
                 audioTrack.pause();

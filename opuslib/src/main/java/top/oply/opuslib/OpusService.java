@@ -4,13 +4,21 @@ package top.oply.opuslib;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
+import android.os.HandlerThread;
 import android.os.IBinder;
+import android.os.Looper;
+import android.os.Message;
 import android.util.Log;
 
 
 public class OpusService extends Service {
 
     private String TAG = OpusService.class.getName();
+
+    //Looper
+    private volatile Looper mServiceLooper;
+    private volatile ServiceHandler mServiceHandler;
 
     //This server
     private static final String ACTION_OPUSSERVICE = "top.oply.opuslib.action.OPUSSERVICE";
@@ -136,7 +144,6 @@ public class OpusService extends Service {
         context.startService(intent);
     }
 
-
     public void onCreate() {
         super.onCreate();
         mEvent = new OpusEvent(getApplicationContext());
@@ -149,17 +156,37 @@ public class OpusService extends Service {
         mPlayer.setEventSender(mEvent);
         mRecorder.setEventSender(mEvent);
         mConverter.setEventSender(mEvent);
+
+        //start looper in onCreate() instead of onStartCommand()
+        HandlerThread thread = new HandlerThread("OpusServiceHander");
+        thread.start();
+        mServiceLooper = thread.getLooper();
+        mServiceHandler = new ServiceHandler(mServiceLooper);
+
     }
 
     public void onDestroy() {
+        //quit looper
+        mServiceLooper.quit();
+
         mPlayer.release();
         mRecorder.release();
         mConverter.release();
         super.onDestroy();
     }
 
+    @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        super.onStartCommand(intent, flags, startId);
+        Message msg = mServiceHandler.obtainMessage();
+        msg.arg1 = startId;
+        msg.obj = intent;
+        mServiceHandler.sendMessage(msg);
 
+        return START_NOT_STICKY;
+    }
+
+    private void onHandleIntent(Intent intent) {
         if (intent != null) {
             final String action = intent.getAction();
 
@@ -226,7 +253,6 @@ public class OpusService extends Service {
             }
 
         }
-        return super.onStartCommand(intent, flags, startId);
     }
 
 
@@ -259,4 +285,14 @@ public class OpusService extends Service {
     }
 
 
+    private final class ServiceHandler extends Handler {
+        public ServiceHandler(Looper looper) {
+            super(looper);
+        }
+        @Override
+        public void handleMessage(Message msg) {
+            onHandleIntent((Intent) msg.obj);
+            //stopSelf()
+        }
+    }
 }

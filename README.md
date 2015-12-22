@@ -1,10 +1,12 @@
-# README #
+Opus for Android
+================
 
-Welcome to the Opus demo for Android.
+
+Welcome to the Opus library for Android.
 
 ### Summary ###
 
-The is a demo on how to use Opus codec for Android project, including audio record, playback, encode and decode.  
+This is an Android library transplanted from official Opus codec. With this library, Opus format audio can be operated in an easy way. Application level function includes audio record, playback, encode and decode.
 
 
 ### Getting started ###
@@ -19,7 +21,7 @@ The is a demo on how to use Opus codec for Android project, including audio reco
 
 * Summary of set up:
 
-1.	Get the source code.[Git] (https://bitbucket.org/louisyoung/opus_android.git)  
+1.	Get the source code.[Git] (https://github.com/louisyonge/opus_android.git)  
 2	remember to export NDK's path. Take Linux for example, add the following code to the end of the file "/etc/profile", and then reboot your system.
 ```
 NDK_ROOT=/usr/local/lib/android-ndk-r9d
@@ -48,8 +50,9 @@ export PATH=$NDK_ROOT:$PATH
 
 # Welcome
 
-Welcome to wiki!
 
+Welcome to wiki!
+----------------
 ## Development Environment
 
 SDK, NDK, Android Studio, Eclipse
@@ -155,6 +158,9 @@ opusRecorder.startRecording(fileName);
 opusRecorder.stopRecording();
 ```
 
+Licence
+--------
+Project uses [Apache 2.0 License](LICENSE)
 
 
 Have fun!

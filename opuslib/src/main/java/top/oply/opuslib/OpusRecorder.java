@@ -50,6 +50,10 @@ public class OpusRecorder {
 
     class RecordThread implements Runnable {
         public void run() {
+            mProgressTimer = new Timer();
+            mRecordTime.setTimeInSecond(0);
+            mProgressTimer.schedule(new MyTimerTask(),1000,1000);
+
             writeAudioDataToFile();
         }
     }
@@ -84,10 +88,6 @@ public class OpusRecorder {
 
         if(mEventSender != null)
             mEventSender.sendEvent(OpusEvent.RECORD_STARTED);
-
-        mProgressTimer = new Timer();
-        mRecordTime.setTimeInSecond(0);
-        mProgressTimer.schedule(new MyTimerTask(),1000,1000);
 
         recordingThread = new Thread(new RecordThread(), "OpusRecord Thrd");
         recordingThread.start();
@@ -144,19 +144,22 @@ public class OpusRecorder {
             }
 
         }
+    }
+
+    private void updateTrackInfo() {
+        OpusTrackInfo info =  OpusTrackInfo.getInstance();
+        info.addOpusFile(filePath);
         if(mEventSender != null) {
             File f = new File(filePath);
             mEventSender.sendEvent(OpusEvent.RECORD_FINISHED,f.getName());
         }
-        OpusTrackInfo info =  OpusTrackInfo.getInstance();
-        info.addOpusFile(filePath);
     }
-
     public void stopRecording() {
         if (state != STATE_STARTED)
             return;
 
         state = STATE_NONE;
+        mProgressTimer.cancel();
         try {
             Thread.sleep(200);
         }
@@ -171,6 +174,8 @@ public class OpusRecorder {
             recorder.release();
             recorder = null;
         }
+
+        updateTrackInfo();
     }
     public boolean isWorking() {
         return state != STATE_NONE;

@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "top.oply.oplayer"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 2
+        versionName '1.1'
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            jniDebuggable true
+            zipAlignEnabled false
+            renderscriptDebuggable false
+            pseudoLocalesEnabled false
+        }
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'//this way we can find the .aar file in libs folder}}
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile(name: 'viewpagerindicator-release', ext: 'aar')
+    compile(name: 'aFileChooser-release', ext: 'aar')
+    compile(name: 'android-gif-drawable', ext: 'aar')
+    compile 'com.android.support:support-v4:22.1.1'
+//    compile project(':opuslib')
+    compile 'top.oply.opuslib:opuslib:1.0.1'
+}
+

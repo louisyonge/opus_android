@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">OPlayer</string>
+
+    <string name="action_about">About</string>
+    <string name="action_licenses">Licenses</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="frg_play">Play</string>
+    <string name="frg_record">Record</string>
+    <string name="frg_convert">Convert</string>
+
+<!-- TODO: Add user hints -->
+    <string name="msg_err_playlist_empty">There is no opus file now. Please import some first.</string>
+    <string name="msg_err_record_failed">Oops, Recording failed..</string>
+    <string name="msg_err_convert_no_input">Please choose a WAV file first.</string>
+    <string name="msg_err_convert_not_wav">This is not WAV file. Please choose a WAV file first.</string>
+    <string name="msg_record_succ">Record is finished. File name is: </string>
+    <string name="msg_choose_file">Choose a WAV file </string>
+    <string name="msg_err_convert_failed">Oops, Converting failed..</string>
+    <string name="msg_convert_succ">Converting is finished. File name is: </string>
+
+    <!-- TODO: Add Parameter names -->
+    <string name="cfg_enc_type">Coding Type </string>
+    <string name="cfg_enc_bitrage">Bitrate</string>
+    <string name="cfg_enc_comp">Complexity</string>
+    <string name="cfg_enc_framesize">Framesize</string>
+    <string name="cfg_enc_WAV_file">WAV file: </string>
+</resources>

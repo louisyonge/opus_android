@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="top.oply.oplayer.FrgConvert">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <pl.droidsonroids.gif.GifImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConvert"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/none"
+        android:src="@drawable/btn_convert" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnImportWav"
+        android:background="@color/none"
+        android:src="@drawable/btn_import_wav"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnConvert"
+        android:layout_toStartOf="@+id/btnConvert" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConverConfig"
+        android:background="@color/none"
+        android:src="@drawable/btn_convert_config"
+        android:layout_alignTop="@+id/btnImportWav"
+        android:layout_toRightOf="@+id/btnConvert"
+        android:layout_toEndOf="@+id/btnConvert"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:cropToPadding="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWavHint"
+        android:layout_below="@+id/btnImportWav"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWavFilePath"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_toRightOf="@+id/tvWavHint"
+        android:layout_toEndOf="@+id/tvWavHint"
+        android:layout_alignBottom="@+id/tvWavHint"
+        android:maxLines="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_above="@+id/btnConvert"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:focusable="true"
+        android:clickable="true"
+        android:accessibilityLiveRegion="polite"
+        android:id="@+id/configLayout"
+        android:layout_below="@+id/tvWavHint">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cfg_enc_type"
+            android:id="@+id/btnEncType"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:clickable="false"
+            android:enabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:typeface="monospace"
+            android:background="@color/none" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cfg_enc_bitrage"
+            android:id="@+id/btnEncBitRate"
+            android:layout_below="@+id/btnEncType"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignRight="@+id/btnEncType"
+            android:clickable="true"
+            android:typeface="sans"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:enabled="true"
+            android:background="@color/none" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cfg_enc_comp"
+            android:id="@+id/btnEncComp"
+            android:layout_below="@+id/btnEncBitRate"
+            android:layout_alignRight="@+id/btnEncType"
+            android:layout_alignEnd="@+id/btnEncBitRate"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:enabled="true"
+            android:background="@color/none" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cfg_enc_framesize"
+            android:id="@+id/btnEncFrameSize"
+            android:layout_below="@+id/btnEncComp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/btnEncType"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/none" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/configListV"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnEncType"
+            android:layout_toEndOf="@+id/btnEncType"
+            tools:listitem="@android:layout/simple_list_item_single_choice" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

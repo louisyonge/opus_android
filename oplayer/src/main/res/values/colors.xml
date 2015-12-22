@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="mblue">#0303ff</color>
+    <color name="mgrey">#4a4a4a</color>
+    <color name="mred">#ff0000</color>
+    <color name="none">#00000000</color>
+    <color name="mblack">#FF000000</color>
+    <color name="mgreen">#FF00FD12</color>
+    <color name="mchoosen">#ff37474f</color>
+	<color name="mhighlights">#243639</color>
+</resources>
