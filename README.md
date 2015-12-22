@@ -2,11 +2,11 @@ Opus for Android
 ================
 
 
-Welcome to the Opus demo for Android.
+Welcome to the Opus library for Android.
 
 ### Summary ###
 
-The is a demo on how to use Opus codec for Android project, including audio record, playback, encode and decode.  
+This is an Android library transplanted from official Opus codec. With this library, Opus format audio can be operated in an easy way. Application level function includes audio record, playback, encode and decode.
 
 
 ### Getting started ###
@@ -160,7 +160,7 @@ opusRecorder.stopRecording();
 
 Licence
 --------
-Project uses [MIT License](LICENSE)
+Project uses [Apache 2.0 License](LICENSE)
 
 
 Have fun!
