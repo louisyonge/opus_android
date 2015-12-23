@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:clickable="false"
-    android:background="@drawable/listview_color"
+    android:background="@drawable/listview_item_selector"
     android:id="@+id/layer_out">
 
 
@@ -52,4 +52,16 @@
         android:layout_alignLeft="@+id/title"
         android:layout_toLeftOf="@+id/duration"
         android:maxLines="1" />
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="cb"
+        android:id="@+id/isChecked"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:enabled="true"
+        android:visibility="gone" />
 </RelativeLayout>

@@ -9,10 +9,15 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.RotateAnimation;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SeekBar;
@@ -89,8 +94,8 @@ public class MainActivity extends FragmentActivity {
         }
         mAdapter = new MyListViewSimAdaptor(getApplicationContext(), mSonglist.getList(), R.layout.playlist_view,
                 new String[]{OpusTrackInfo.TITLE_TITLE, OpusTrackInfo.TITLE_DURATION,
-                        OpusTrackInfo.TITLE_IMG, OpusTrackInfo.TITLE_ABS_PATH},
-                new int[]{R.id.title, R.id.duration, R.id.img, R.id.absPath});
+                        OpusTrackInfo.TITLE_IMG, OpusTrackInfo.TITLE_ABS_PATH, OpusTrackInfo.TITLE_IS_CHECKED},
+                new int[]{R.id.title, R.id.duration, R.id.img, R.id.absPath, R.id.isChecked});
         mAdapter.setHilighedItemPosition(songPlayingPosition);
         initUI();
         initBroadcast();
@@ -127,12 +132,12 @@ public class MainActivity extends FragmentActivity {
     public void initRecordUI(View v) {
         mBtnRecord = (ImageButton) v.findViewById(R.id.btnRecord);
         mTvRecordTime = (TextView) v.findViewById(R.id.tvRecordTime);
-        changeBtnRecordPhaseChanged(mPhaseBtnRecord);
+        changeBtnRecordStatus(mPhaseBtnRecord);
     }
 
     public void initConverUI(View v) {
         mBtnConvert = (GifImageButton)v.findViewById(R.id.btnConvert);
-        changeBtnConvertPhaseChanged(mPhaseBtnConvert);
+        changeBtnConvertStatus(mPhaseBtnConvert);
     }
 
     public void initPlayUI(View v) {
@@ -157,7 +162,7 @@ public class MainActivity extends FragmentActivity {
             mLvSongs.setSelection(listScrollPosition);
         //only to start service
         OpusService.getTrackInfo(getApplicationContext());
-        changeBtnPlayPhaseChanged(mPhaseBtnPlay);
+        changeBtnPlayStatus(mPhaseBtnPlay);
     }
 
     private void initUI() {
@@ -181,39 +186,6 @@ public class MainActivity extends FragmentActivity {
         TabPageIndicator tabIndicator = (TabPageIndicator) findViewById(R.id.indicator);
         tabIndicator.setViewPager(pager);
     }
-//
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//
-//        menu.add(Menu.NONE, Menu.FIRST + 1, 1, getResources().getString(R.string.action_about));
-//        menu.add(Menu.NONE, Menu.FIRST + 2, 2, getResources().getString(R.string.action_licenses));
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//
-//        switch (item.getItemId()) {
-//            case R.id.action_settings:
-//                Toast.makeText(this, "settings is clicked", Toast.LENGTH_LONG).show();
-//                break;
-//            case Menu.FIRST + 1:
-//                break;
-//            case Menu.FIRST + 2:
-//            default:
-//                break;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
 
 
     public boolean isSongListEmpty() {
@@ -275,10 +247,12 @@ public class MainActivity extends FragmentActivity {
 
     public class MyListViewSimAdaptor extends SimpleAdapter {
         private int lastHilighedItemPosition = -1;
+        private LayoutInflater mInflater;
+
         public MyListViewSimAdaptor(Context context, List<Map<String, Object>> data,
                                   int resource, String[] from, int[] to) {
-
             super(context, data, resource, from, to);
+            mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
 
         public void setHilighedItemPosition(int position) {
@@ -325,15 +299,22 @@ public class MainActivity extends FragmentActivity {
         }
 
         public View getView(int position, View convertView, ViewGroup parent) {
-            View v = super.getView(position, convertView, parent);
-            boolean ischecked = (boolean)(((Map<String, Object>)getItem(position)).get(OpusTrackInfo.TITLE_IS_CHECKED));
+//            ViewHolder viewHolder = null;
+//            if (convertView == null) {
+//                viewHolder = new ViewHolder();
+//                convertView = mInflater.inflate(R.layout.playlist_view, null);
+//                viewHolder.checkBox = (CheckBox)convertView.findViewById(R.id.isChecked);
+//                convertView.setTag(viewHolder);
+//            } else {
+//                viewHolder = (ViewHolder) convertView.getTag();
+//            }
+//
+//            return convertView;
+            return super.getView(position, convertView, parent);
+        }
 
-            if(ischecked) {
-                v.setBackgroundResource(R.color.mchoosen);
-            } else {
-                v.setBackgroundResource(R.color.none);
-            }
-            return v;
+        class ViewHolder{
+            public CheckBox checkBox = null;
         }
     }
 
@@ -367,35 +348,45 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
-    private void changeBtnConvertPhaseChanged(boolean b) {
+    private void changeBtnConvertStatus(boolean b) {
+
+
         if (b) { //converting
+            Animation rotate = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.converting);
+//            mBtnConvert.setImageResource(R.mipmap.icon_converting);
             mBtnConvert.setImageResource(R.mipmap.icon_converting);
+            mBtnConvert.startAnimation(rotate);
             mBtnConvert.setClickable(false);
 
         } else { //idle
-            mBtnConvert.setImageResource(R.drawable.btn_convert);
+            Animation anim = mBtnConvert.getAnimation();
+            if (anim != null) {
+                mBtnConvert.getAnimation().cancel();
+                mBtnConvert.clearAnimation();
+            }
+            mBtnConvert.setImageResource(R.drawable.btn_convert_selector);
             mBtnConvert.setClickable(true);
         }
         mPhaseBtnConvert = b;
 
     }
-    private void changeBtnPlayPhaseChanged(boolean b) {
+    private void changeBtnPlayStatus(boolean b) {
         if (b) { //Playing
-            mBtnPlay.setImageResource(R.drawable.btn_pause);
+            mBtnPlay.setImageResource(R.drawable.btn_pause_selector);
 
         } else { //idle
-            mBtnPlay.setImageResource(R.drawable.btn_play);
+            mBtnPlay.setImageResource(R.drawable.btn_play_selector);
         }
         mPhaseBtnPlay = b;
 
     }
 
-    private void changeBtnRecordPhaseChanged(boolean b) {
+    private void changeBtnRecordStatus(boolean b) {
         if (b) { //Playing
-            mBtnRecord.setImageResource(R.drawable.btn_stop_recording);
+            mBtnRecord.setImageResource(R.drawable.btn_stop_recording_selector);
 
         } else { //idle
-            mBtnRecord.setImageResource(R.drawable.btn_record);
+            mBtnRecord.setImageResource(R.drawable.btn_record_selector);
         }
         mPhaseBtnConvert = b;
 
@@ -412,29 +403,29 @@ public class MainActivity extends FragmentActivity {
                     String msg = bundle.getString(OpusEvent.EVENT_MSG);
                     Toast.makeText(getApplicationContext(),getString(R.string.msg_convert_succ) + msg
                             , Toast.LENGTH_LONG).show();
-                    changeBtnConvertPhaseChanged(false);
+                    changeBtnConvertStatus(false);
                     break;
                 case OpusEvent.CONVERT_FAILED:
                     Toast.makeText(getApplicationContext(),getString(R.string.msg_err_convert_failed)
                             , Toast.LENGTH_SHORT).show();
-                    changeBtnConvertPhaseChanged(false);
+                    changeBtnConvertStatus(false);
                     break;
                 case OpusEvent.CONVERT_STARTED:
-                    changeBtnConvertPhaseChanged(true);
+                    changeBtnConvertStatus(true);
                     break;
                 case OpusEvent.RECORD_FAILED:
-                    changeBtnRecordPhaseChanged(false);
+                    changeBtnRecordStatus(false);
                     Toast.makeText(getApplicationContext(),getString(R.string.msg_err_record_failed)
                             , Toast.LENGTH_SHORT).show();
                     break;
                 case OpusEvent.RECORD_FINISHED:
-                    changeBtnRecordPhaseChanged(false);
+                    changeBtnRecordStatus(false);
                     msg = bundle.getString(OpusEvent.EVENT_MSG);
                     Toast.makeText(getApplicationContext(),getString(R.string.msg_record_succ)
                             + msg, Toast.LENGTH_LONG).show();
                     break;
                 case OpusEvent.RECORD_STARTED:
-                    changeBtnRecordPhaseChanged(true);
+                    changeBtnRecordStatus(true);
                     break;
                 case OpusEvent.RECORD_PROGRESS_UPDATE:
                     String time = bundle.getString(OpusEvent.EVENT_RECORD_PROGRESS);
@@ -468,18 +459,18 @@ public class MainActivity extends FragmentActivity {
                     mAdapter.notifyDataSetChanged();
                     break;
                 case OpusEvent.PLAYING_FAILED:
-                    changeBtnPlayPhaseChanged(false);
+                    changeBtnPlayStatus(false);
                     break;
                 case OpusEvent.PLAYING_FINISHED:
-                    changeBtnPlayPhaseChanged(false);
+                    changeBtnPlayStatus(false);
                     mTvPosition.setText(new Utils.AudioTime().getTime());
                     mPlaySeekBar.setProgress(0);
                     break;
                 case OpusEvent.PLAYING_PAUSED:
-                    changeBtnPlayPhaseChanged(false);
+                    changeBtnPlayStatus(false);
                     break;
                 case OpusEvent.PLAYING_STARTED:
-                    changeBtnPlayPhaseChanged(true);
+                    changeBtnPlayStatus(true);
                     break;
                 default:
                     Log.d(TAG, intent.toString() + "Invalid request,discarded");

@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnRecord"
-        android:src="@drawable/btn_record"
+        android:src="@drawable/btn_record_selector"
         android:onClick="onBtnRecordClick"
         android:background="@android:color/transparent"
         android:layout_alignParentBottom="true"

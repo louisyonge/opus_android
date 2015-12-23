@@ -12,14 +12,14 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/none"
-        android:src="@drawable/btn_convert" />
+        android:src="@drawable/btn_convert_selector" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnImportWav"
         android:background="@color/none"
-        android:src="@drawable/btn_import_wav"
+        android:src="@drawable/btn_import_wav_selector"
         android:layout_marginTop="5dp"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/btnConvert"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnConverConfig"
         android:background="@color/none"
-        android:src="@drawable/btn_convert_config"
+        android:src="@drawable/btn_convert_config_selector"
         android:layout_alignTop="@+id/btnImportWav"
         android:layout_toRightOf="@+id/btnConvert"
         android:layout_toEndOf="@+id/btnConvert"
