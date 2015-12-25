@@ -95,6 +95,7 @@ OpusRecorder opusRecorder = OpusRecorder.getInstance();
 opusRecorder.startRecording(fileName);
 opusRecorder.stopRecording();
 ```
+**Well, you can stop reading if you don't need to modify the library code.** Your project should be working if you follow the steps above.
 
 ##Project Compilation
 
