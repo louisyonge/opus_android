@@ -43,6 +43,6 @@ dependencies {
     compile(name: 'android-gif-drawable', ext: 'aar')
     compile 'com.android.support:support-v4:22.1.1'
 //    compile project(':opuslib')
-    compile 'top.oply.opuslib:opuslib:1.0.1'
+    compile 'top.oply.opuslib:opuslib:1.0.2'
 }
 
