@@ -1,3 +1,7 @@
+## NOTE: THIS PROJECT IS DEPRECATED. This project is no longer being maintained.
+
+
+
 # Opus for Android
 
 Welcome to the Opus library for Android.
