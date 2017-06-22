@@ -59,9 +59,9 @@ class OpusReceiver extends BroadcastReceiver {
                 case OpusEvent.RECORD_PROGRESS_UPDATE:
                     break;
                 case OpusEvent.PLAY_PROGRESS_UPDATE:
-					break
+                    break;
                 case OpusEvent.PLAY_GET_AUDIO_TRACK_INFO:
-					break
+                    break;
                 case OpusEvent.PLAYING_FAILED:
                     break;
                 case OpusEvent.PLAYING_FINISHED:
